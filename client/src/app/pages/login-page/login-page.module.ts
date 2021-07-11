@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { LoginPageRoutingModule } from './login-page-routing.module';
 import { LoginPageComponent } from './login-page.component';
+import {AppInputsModule} from "@shared/app-inputs/app-inputs.module";
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { LoginPageComponent } from './login-page.component';
   ],
   imports: [
     CommonModule,
-    LoginPageRoutingModule
+    LoginPageRoutingModule,
+    AppInputsModule
   ]
 })
 export class LoginPageModule { }

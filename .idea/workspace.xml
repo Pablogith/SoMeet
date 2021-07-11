@@ -5,30 +5,138 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e136a5b0-eb3c-471d-837c-42999ec58de8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/src/modules/auth/auth.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/modules/auth/auth.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/modules/auth/constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/modules/auth/jwt-auth.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/modules/auth/jwt.strategy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/modules/auth/local-auth.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/modules/auth/local.strategy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/modules/users/users.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/modules/users/users.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/components/AppComponent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/components/BasicInputComponent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/components/HomePageComponent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/components/LoginPageComponent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/components/NotFoundPageComponent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/components/RegisterPageComponent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/coverage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/dependencies.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/ionicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/ionicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/ionicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/ionicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/ionicons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-300.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-300.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-300.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-300.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-300.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-700.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-700.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-700.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-700.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-700.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/fonts/roboto-v15-latin-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/graph/dependencies.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/images/compodoc-vectorise-inverted.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/images/compodoc-vectorise-inverted.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/images/compodoc-vectorise.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/images/compodoc-vectorise.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/images/coverage-badge-documentation.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/interfaces/IBasicInput.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/compodoc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/lazy-load-graphs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/libs/EventDispatcher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/libs/bootstrap-native.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/libs/clipboard.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/libs/custom-elements-es5-adapter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/libs/custom-elements.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/libs/d3.v3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/libs/deep-iterator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/libs/es6-shim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/libs/htmlparser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/libs/innersvg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/libs/lit-html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/libs/prism.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/libs/promise.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/libs/svg-pan-zoom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/libs/tablesort.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/libs/tablesort.number.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/libs/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/libs/zepto.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/menu-wc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/menu-wc_es5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/routes/routes_index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/search/lunr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/search/search-lunr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/search/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/search/search_index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/sourceCode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/svg-pan-zoom.controls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/js/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/miscellaneous/variables.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/modules.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/modules/AppInputsModule.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/modules/AppInputsModule/dependencies.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/modules/AppModule.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/modules/AppModule/dependencies.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/modules/AppRoutingModule.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/modules/CoreModule.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/modules/HomePageModule.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/modules/HomePageModule/dependencies.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/modules/HomePageRoutingModule.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/modules/LoginPageModule.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/modules/LoginPageModule/dependencies.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/modules/LoginPageRoutingModule.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/modules/NotFoundPageModule.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/modules/NotFoundPageModule/dependencies.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/modules/NotFoundPageRoutingModule.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/modules/RegisterPageModule.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/modules/RegisterPageModule/dependencies.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/modules/RegisterPageRoutingModule.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/overview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/routes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/styles/bootstrap-card.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/styles/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/styles/compodoc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/styles/dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/styles/ionicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/styles/laravel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/styles/material.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/styles/original.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/styles/postmark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/styles/prism.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/styles/readthedocs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/styles/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/styles/stripe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/styles/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/styles/tablesort.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/documentation/styles/vagrant.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/pages/home-page/home-page-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/pages/home-page/home-page.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/pages/home-page/home-page.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/pages/home-page/home-page.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/pages/home-page/home-page.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/pages/home-page/home-page.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/shared/app-inputs/app-inputs.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/shared/app-inputs/components/basic-input/basic-input.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/shared/app-inputs/components/basic-input/basic-input.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/shared/app-inputs/components/basic-input/basic-input.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/shared/app-inputs/components/basic-input/basic-input.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/tsconfig.doc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/login-page/login-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/login-page/login-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/login-page/login-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/login-page/login-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/login-page/login-page.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/login-page/login-page.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/register-page/register-page.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/register-page/register-page.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,12 +191,22 @@
       <recent name="$PROJECT_DIR$/client/" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.client lint">
+  <component name="RunManager" selected="npm.lint:fix">
     <configuration name="client lint" type="js.build_tools.npm" temporary="true">
       <package-json value="$PROJECT_DIR$/client/package.json" />
       <command value="run" />
       <scripts>
         <script value="lint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="lint:fix" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint:fix" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -107,9 +225,11 @@
     <list>
       <item itemvalue="npm.server lint" />
       <item itemvalue="npm.client lint" />
+      <item itemvalue="npm.lint:fix" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.lint:fix" />
         <item itemvalue="npm.client lint" />
         <item itemvalue="npm.server lint" />
       </list>
@@ -125,7 +245,7 @@
       <updated>1625164955768</updated>
       <workItem from="1625164970301" duration="1329000" />
       <workItem from="1625770205661" duration="1691000" />
-      <workItem from="1625995634186" duration="5728000" />
+      <workItem from="1625995634186" duration="8413000" />
     </task>
     <task id="LOCAL-00001" summary="Add Angular as a client and nest.js as a server">
       <created>1625165276580</created>
@@ -134,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625165276580</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add UI for login and register page">
+      <created>1626002962165</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1626002962165</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +281,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add Angular as a client and nest.js as a server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Angular as a client and nest.js as a server" />
+    <MESSAGE value="Add UI for login and register page" />
+    <MESSAGE value="Add compodoc documentation for client" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add compodoc documentation for client" />
   </component>
 </project>

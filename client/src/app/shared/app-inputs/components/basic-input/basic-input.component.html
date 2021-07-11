@@ -1,0 +1,8 @@
+<div>
+  <label [for]="inputData.name" class="block text-sm font-medium text-gray-700">{{ inputData.title }}</label>
+  <div class="mt-1 relative rounded-md shadow-sm">
+    <input [type]="inputData.type" [name]="inputData.name" [id]="inputData.name" [autocomplete]="inputData.name" required
+           class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-2 pr-12 sm:text-sm border-gray-300 rounded-md"
+           [placeholder]="inputData.placeholder">
+  </div>
+</div>
