@@ -1,1 +1,6 @@
-<router-outlet></router-outlet>
+<layout-structure *ngIf="!isAuthPath; else authPages">
+  <router-outlet></router-outlet>
+</layout-structure>
+<ng-template #authPages>
+  <router-outlet></router-outlet>
+</ng-template>

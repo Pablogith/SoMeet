@@ -121,6 +121,24 @@
 </section>
 
 
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/pages/not-found-page/not-found-page.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
 
 
 
@@ -132,7 +150,8 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, OnInit} from &#x27;@angular/core&#x27;;
+import {Title} from &quot;@angular/platform-browser&quot;;
 
 @Component({
   selector: &#x27;app-not-found-page&#x27;,
@@ -144,7 +163,12 @@
     }
 &#x60;]
 })
-export class NotFoundPageComponent { }
+export class NotFoundPageComponent {
+
+  constructor() {
+  }
+
+}
 </code></pre>
     </div>
 
@@ -192,7 +216,7 @@ export class NotFoundPageComponent { }
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><div class="wrapper flex flex-col items-center justify-center -mt-20">  <h1 class="text-gray-700 text-6xl">Page not found</h1>  <h2 class="text-red-600 text-6xl font-bold">404</h2></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BasicInputComponent', 'selector': 'app-basic-input'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'LoginPageComponent', 'selector': 'app-login-page'},{'name': 'NotFoundPageComponent', 'selector': 'app-not-found-page'},{'name': 'RegisterPageComponent', 'selector': 'app-register-page'}];
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'LabelInputComponent', 'selector': 'app-label-input'},{'name': 'LayoutStructureComponent', 'selector': 'layout-structure'},{'name': 'LoginPageComponent', 'selector': 'app-login-page'},{'name': 'MessagesPageComponent', 'selector': 'app-messages-page'},{'name': 'NotFoundPageComponent', 'selector': 'app-not-found-page'},{'name': 'ProfilePageComponent', 'selector': 'app-profile-page'},{'name': 'RegisterPageComponent', 'selector': 'app-register-page'},{'name': 'SavedPostPageComponent', 'selector': 'app-saved-post-page'},{'name': 'SettingsPageComponent', 'selector': 'app-settings-page'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'NotFoundPageComponent'};
 </script>

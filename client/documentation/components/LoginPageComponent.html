@@ -159,7 +159,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/pages/login-page/login-page.component.ts:22</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/pages/login-page/login-page.component.ts:23</a></div>
                             </td>
                         </tr>
 
@@ -207,7 +207,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/pages/login-page/login-page.component.ts:10</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/pages/login-page/login-page.component.ts:11</a></div>
                         </td>
                     </tr>
 
@@ -244,7 +244,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/pages/login-page/login-page.component.ts:17</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/pages/login-page/login-page.component.ts:18</a></div>
                         </td>
                     </tr>
 
@@ -257,7 +257,8 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, OnInit} from &#x27;@angular/core&#x27;;
+import {Title} from &quot;@angular/platform-browser&quot;;
 
 @Component({
   selector: &#x27;app-login-page&#x27;,
@@ -303,9 +304,9 @@ export class LoginPageComponent {
     &lt;form class&#x3D;&quot;mt-8 space-y-6&quot; action&#x3D;&quot;#&quot; method&#x3D;&quot;POST&quot;&gt;
       &lt;input type&#x3D;&quot;hidden&quot; name&#x3D;&quot;remember&quot; value&#x3D;&quot;true&quot;&gt;
       &lt;div class&#x3D;&quot;rounded-md shadow-sm&quot;&gt;
-        &lt;app-basic-input [inputData]&#x3D;&quot;emailInputData&quot;&gt;&lt;/app-basic-input&gt;
+        &lt;app-label-input [inputData]&#x3D;&quot;emailInputData&quot;&gt;&lt;/app-label-input&gt;
         &lt;div class&#x3D;&quot;mt-5&quot;&gt;
-          &lt;app-basic-input [inputData]&#x3D;&quot;passwordInputData&quot;&gt;&lt;/app-basic-input&gt;
+          &lt;app-label-input [inputData]&#x3D;&quot;passwordInputData&quot;&gt;&lt;/app-label-input&gt;
         &lt;/div&gt;
       &lt;/div&gt;
       &lt;div class&#x3D;&quot;flex items-center justify-between&quot;&gt;
@@ -369,8 +370,8 @@ export class LoginPageComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">  <div class="max-w-md w-full space-y-8">    <div>      <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">        Sign in      </h2>      <p class="mt-2 text-center text-sm text-gray-600">        Or        <a routerLink="/register" class="font-medium text-indigo-600 hover:text-indigo-500">          create your new account        </a>      </p>    </div>    <form class="mt-8 space-y-6" action="#" method="POST">      <input type="hidden" name="remember" value="true">      <div class="rounded-md shadow-sm">        <app-basic-input [inputData]="emailInputData"></app-basic-input>        <div class="mt-5">          <app-basic-input [inputData]="passwordInputData"></app-basic-input>        </div>      </div>      <div class="flex items-center justify-between">        <div class="text-sm">          <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">            Forgot your password?          </a>        </div>      </div>      <div>        <button type="submit"                class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">          <span class="absolute left-0 inset-y-0 flex items-center pl-3">            <!-- Heroicon name: solid/lock-closed -->            <svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg"                 viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">              <path fill-rule="evenodd"                    d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"                    clip-rule="evenodd"/>            </svg>          </span>          Sign in        </button>      </div>    </form>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BasicInputComponent', 'selector': 'app-basic-input'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'LoginPageComponent', 'selector': 'app-login-page'},{'name': 'NotFoundPageComponent', 'selector': 'app-not-found-page'},{'name': 'RegisterPageComponent', 'selector': 'app-register-page'}];
+        var COMPONENT_TEMPLATE = '<div><div class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">  <div class="max-w-md w-full space-y-8">    <div>      <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">        Sign in      </h2>      <p class="mt-2 text-center text-sm text-gray-600">        Or        <a routerLink="/register" class="font-medium text-indigo-600 hover:text-indigo-500">          create your new account        </a>      </p>    </div>    <form class="mt-8 space-y-6" action="#" method="POST">      <input type="hidden" name="remember" value="true">      <div class="rounded-md shadow-sm">        <app-label-input [inputData]="emailInputData"></app-label-input>        <div class="mt-5">          <app-label-input [inputData]="passwordInputData"></app-label-input>        </div>      </div>      <div class="flex items-center justify-between">        <div class="text-sm">          <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">            Forgot your password?          </a>        </div>      </div>      <div>        <button type="submit"                class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">          <span class="absolute left-0 inset-y-0 flex items-center pl-3">            <!-- Heroicon name: solid/lock-closed -->            <svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg"                 viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">              <path fill-rule="evenodd"                    d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"                    clip-rule="evenodd"/>            </svg>          </span>          Sign in        </button>      </div>    </form>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'LabelInputComponent', 'selector': 'app-label-input'},{'name': 'LayoutStructureComponent', 'selector': 'layout-structure'},{'name': 'LoginPageComponent', 'selector': 'app-login-page'},{'name': 'MessagesPageComponent', 'selector': 'app-messages-page'},{'name': 'NotFoundPageComponent', 'selector': 'app-not-found-page'},{'name': 'ProfilePageComponent', 'selector': 'app-profile-page'},{'name': 'RegisterPageComponent', 'selector': 'app-register-page'},{'name': 'SavedPostPageComponent', 'selector': 'app-saved-post-page'},{'name': 'SettingsPageComponent', 'selector': 'app-settings-page'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'LoginPageComponent'};
 </script>

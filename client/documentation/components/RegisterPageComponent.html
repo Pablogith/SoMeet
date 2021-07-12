@@ -70,12 +70,6 @@
 
 
 
-    <p class="comment">
-        <h3>Implements</h3>
-    </p>
-    <p class="comment">
-                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
-    </p>
 
 
 <section>
@@ -121,33 +115,6 @@
     </table>
 </section>
 
-    <section>
-    <h3 id="index">Index</h3>
-    <table class="table table-sm table-bordered index-table">
-        <tbody>
-
-                <tr>
-                    <td class="col-md-4">
-                        <h6><b>Methods</b></h6>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <ul class="index-list">
-                            <li>
-                                <a href="#ngOnInit" >ngOnInit</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-
-
-
-
-
-        </tbody>
-    </table>
-</section>
 
     <section>
     <h3 id="constructor">Constructor</h3>
@@ -160,7 +127,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/pages/register-page/register-page.component.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/pages/register-page/register-page.component.ts:9</a></div>
                             </td>
                         </tr>
 
@@ -172,67 +139,23 @@
 
 
 
-    <section>
-    
-    <h3 id="methods">
-        Methods
-    </h3>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="ngOnInit"></a>
-                    <span class="name">
-                        <span ><b>ngOnInit</b></span>
-                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>ngOnInit()</code>
-                </td>
-            </tr>
 
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="12"
-                            class="link-to-prism">src/app/pages/register-page/register-page.component.ts:12</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</section>
 
 </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import {Title} from &quot;@angular/platform-browser&quot;;
 
 @Component({
   selector: &#x27;app-register-page&#x27;,
   templateUrl: &#x27;./register-page.component.html&#x27;,
   styleUrls: [&#x27;./register-page.component.scss&#x27;]
 })
-export class RegisterPageComponent implements OnInit {
+export class RegisterPageComponent {
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
 </code></pre>
@@ -335,7 +258,7 @@ export class RegisterPageComponent implements OnInit {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><div class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">  <div class="max-w-md w-full space-y-8">    <div>      <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">        Sign up      </h2>      <p class="mt-2 text-center text-sm text-gray-600">        Or        <a routerLink="/login" class="font-medium text-indigo-600 hover:text-indigo-500">          sign in to your account        </a>      </p>    </div>    <form class="mt-8 space-y-6" action="#" method="POST">      <input type="hidden" name="remember" value="true">      <div class="rounded-md shadow-sm">        <div>          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>          <div class="mt-1 relative rounded-md shadow-sm">            <input type="email" name="email" id="email" autocomplete="email" required                   class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-2 pr-12 sm:text-sm border-gray-300 rounded-md"                   placeholder="example@gmail.com">          </div>        </div>        <div class="mt-5">          <label for="password" class="block text-sm font-medium text-gray-700">Password</label>          <div class="mt-1 relative rounded-md shadow-sm">            <input type="password" name="password" id="password" autocomplete="current-password" required                   class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-2 pr-12 sm:text-sm border-gray-300 rounded-md"                   placeholder="******">          </div>        </div>        <div class="mt-5">          <label for="confirmPassword" class="block text-sm font-medium text-gray-700">Confirm password</label>          <div class="mt-1 relative rounded-md shadow-sm">            <input type="password" name="confirmPassword" id="confirmPassword" required                   class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-2 pr-12 sm:text-sm border-gray-300 rounded-md"                   placeholder="******">          </div>        </div>      </div>      <div>        <button type="submit"                class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">          <span class="absolute left-0 inset-y-0 flex items-center pl-3">            <!-- Heroicon name: solid/lock-closed -->            <svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg"                 viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">              <path fill-rule="evenodd"                    d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"                    clip-rule="evenodd"/>            </svg>          </span>          Sign up        </button>      </div>    </form>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BasicInputComponent', 'selector': 'app-basic-input'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'LoginPageComponent', 'selector': 'app-login-page'},{'name': 'NotFoundPageComponent', 'selector': 'app-not-found-page'},{'name': 'RegisterPageComponent', 'selector': 'app-register-page'}];
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'LabelInputComponent', 'selector': 'app-label-input'},{'name': 'LayoutStructureComponent', 'selector': 'layout-structure'},{'name': 'LoginPageComponent', 'selector': 'app-login-page'},{'name': 'MessagesPageComponent', 'selector': 'app-messages-page'},{'name': 'NotFoundPageComponent', 'selector': 'app-not-found-page'},{'name': 'ProfilePageComponent', 'selector': 'app-profile-page'},{'name': 'RegisterPageComponent', 'selector': 'app-register-page'},{'name': 'SavedPostPageComponent', 'selector': 'app-saved-post-page'},{'name': 'SettingsPageComponent', 'selector': 'app-settings-page'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'RegisterPageComponent'};
 </script>

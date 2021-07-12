@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BasicInputComponent } from './basic-input.component';
+import { SavedPostPageComponent } from './saved-post-page.component';
 
-describe('BasicInputComponent', () => {
-  let component: BasicInputComponent;
-  let fixture: ComponentFixture<BasicInputComponent>;
+describe('SavedPostPageComponent', () => {
+  let component: SavedPostPageComponent;
+  let fixture: ComponentFixture<SavedPostPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BasicInputComponent ]
+      declarations: [ SavedPostPageComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BasicInputComponent);
+    fixture = TestBed.createComponent(SavedPostPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

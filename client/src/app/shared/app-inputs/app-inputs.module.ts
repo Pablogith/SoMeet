@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BasicInputComponent } from './components/basic-input/basic-input.component';
+import { LabelInputComponent } from './components/label-input/label-input.component';
 
 
 
 @NgModule({
   declarations: [
-    BasicInputComponent
+    LabelInputComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    BasicInputComponent
+    LabelInputComponent
   ]
 })
 export class AppInputsModule { }

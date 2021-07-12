@@ -1,0 +1,19 @@
+import { Component, Input } from '@angular/core';
+
+interface ILabelInput {
+  title: string;
+  name: string;
+  type: string;
+  placeholder?: string;
+}
+
+@Component({
+  selector: 'app-label-input',
+  templateUrl: './label-input.component.html',
+  styleUrls: ['./label-input.component.scss']
+})
+export class LabelInputComponent {
+
+  @Input() inputData!: ILabelInput;
+
+}
