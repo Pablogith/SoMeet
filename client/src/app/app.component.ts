@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {CheckIsAuthPathService} from "@authorization/services/check-is-auth-path.service";
+import {CheckIsAuthPathService} from "@authorization/services/check-is-auth-path/check-is-auth-path.service";
 import {PageTitleService} from "@core/services/page-title-service/page-title.service";
 
 @Component({

@@ -5,108 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e136a5b0-eb3c-471d-837c-42999ec58de8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/documentation/components/LabelInputComponent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/components/LayoutStructureComponent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/components/MessagesPageComponent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/components/ProfilePageComponent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/components/SavedPostPageComponent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/components/SettingsPageComponent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/injectables/CheckIsAuthPathService.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/injectables/PageTitleService.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/interfaces/ILabelInput.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/modules/AuthorizationModule.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/modules/LayoutModule.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/modules/LayoutModule/dependencies.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/modules/MessagesPageModule.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/modules/MessagesPageModule/dependencies.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/modules/MessagesPageRoutingModule.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/modules/ProfilePageModule.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/modules/ProfilePageModule/dependencies.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/modules/ProfilePageRoutingModule.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/modules/SavedPostsPageModule.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/modules/SavedPostsPageModule/dependencies.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/modules/SavedPostsPageRoutingModule.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/modules/SettingsPageModule.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/modules/SettingsPageModule/dependencies.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/documentation/modules/SettingsPageRoutingModule.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/authorization/authorization.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/authorization/services/check-is-auth-path.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/authorization/services/check-is-auth-path.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/core/services/page-title-service/page-title.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/core/services/page-title-service/set-page-title.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/features/layout/components/layout-structure/layout-structure.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/features/layout/components/layout-structure/layout-structure.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/features/layout/components/layout-structure/layout-structure.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/features/layout/components/layout-structure/layout-structure.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/features/layout/layout.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/messages-page/messages-page-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/messages-page/messages-page.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/messages-page/messages-page.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/messages-page/messages-page.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/messages-page/messages-page.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/profile-page/profile-page-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/profile-page/profile-page.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/profile-page/profile-page.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/profile-page/profile-page.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/profile-page/profile-page.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/profile-page/profile-page.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/saved-posts-page/saved-post-page.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/saved-posts-page/saved-post-page.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/saved-posts-page/saved-post-page.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/saved-posts-page/saved-post-page.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/saved-posts-page/saved-posts-page-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/saved-posts-page/saved-posts-page.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/settings-page/settings-page-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/settings-page/settings-page.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/settings-page/settings-page.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/settings-page/settings-page.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/settings-page/settings-page.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/pages/settings-page/settings-page.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/authorization/intercdptors/auth.interceptor.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/authorization/intercdptors/auth.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/authorization/services/auth/auth.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/authorization/services/auth/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/features/posts/interfaces/post.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/features/posts/posts.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/features/users/interfaces/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/features/users/services/http-users/http-users.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/features/users/services/http-users/http-users.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/features/users/users.module.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/src/app/shared/app-inputs/components/label-input/label-input.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/components/AppComponent.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/components/AppComponent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/components/BasicInputComponent.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/components/BasicInputComponent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/components/HomePageComponent.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/components/HomePageComponent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/components/LoginPageComponent.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/components/LoginPageComponent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/components/NotFoundPageComponent.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/components/NotFoundPageComponent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/components/RegisterPageComponent.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/components/RegisterPageComponent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/coverage.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/coverage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/graph/dependencies.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/graph/dependencies.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/js/menu-wc.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/js/menu-wc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/js/menu-wc_es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/js/menu-wc_es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/js/routes/routes_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/js/routes/routes_index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/js/search/search_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/js/search/search_index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/modules.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/modules.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/modules/AppInputsModule.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/modules/AppInputsModule.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/modules/AppInputsModule/dependencies.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/modules/AppInputsModule/dependencies.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/modules/AppModule.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/modules/AppModule.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/modules/AppModule/dependencies.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/modules/AppModule/dependencies.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/modules/AppRoutingModule.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/modules/AppRoutingModule.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/modules/LoginPageModule.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/modules/LoginPageModule.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/modules/LoginPageModule/dependencies.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/modules/LoginPageModule/dependencies.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/modules/NotFoundPageModule.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/modules/NotFoundPageModule.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/modules/NotFoundPageModule/dependencies.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/modules/NotFoundPageModule/dependencies.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/modules/RegisterPageModule.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/modules/RegisterPageModule.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/modules/RegisterPageModule/dependencies.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/modules/RegisterPageModule/dependencies.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/documentation/overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/documentation/overview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/pages/home-page/home-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/home-page/home-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/pages/login-page/login-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/login-page/login-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/pages/login-page/login-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/login-page/login-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/pages/not-found-page/not-found-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/not-found-page/not-found-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/pages/register-page/register-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/register-page/register-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/shared/app-inputs/app-inputs.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/shared/app-inputs/app-inputs.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/shared/app-inputs/components/basic-input/basic-input.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/shared/app-inputs/components/label-input/label-input.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/shared/app-inputs/components/basic-input/basic-input.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/messages-page/messages-page.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/shared/app-inputs/components/basic-input/basic-input.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/shared/app-inputs/components/label-input/label-input.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/shared/app-inputs/components/basic-input/basic-input.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/shared/app-inputs/components/label-input/label-input.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/authorization/services/check-is-auth-path.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/authorization/services/check-is-auth-path/check-is-auth-path.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/authorization/services/check-is-auth-path.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/authorization/services/check-is-auth-path/check-is-auth-path.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/modules/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/modules/users/users.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +80,8 @@
       <recent name="$PROJECT_DIR$/server/src/modules" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/app/authorization/services/check-is-auth-path" />
+      <recent name="$PROJECT_DIR$/client/src/app/authorization/services/auth" />
       <recent name="$PROJECT_DIR$/client/" />
     </key>
   </component>
@@ -234,7 +152,8 @@
       <workItem from="1625164970301" duration="1329000" />
       <workItem from="1625770205661" duration="1691000" />
       <workItem from="1625995634186" duration="8488000" />
-      <workItem from="1626036716964" duration="9906000" />
+      <workItem from="1626036716964" duration="9978000" />
+      <workItem from="1626284036492" duration="3302000" />
     </task>
     <task id="LOCAL-00001" summary="Add Angular as a client and nest.js as a server">
       <created>1625165276580</created>
@@ -257,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626005982185</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add few simple pages">
+      <created>1626091218279</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1626091218279</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +206,7 @@
     <MESSAGE value="Add UI for login and register page" />
     <MESSAGE value="Add compodoc documentation for client" />
     <MESSAGE value="Add few simple pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add few simple pages" />
+    <MESSAGE value="Add auth service and interceptor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add auth service and interceptor" />
   </component>
 </project>
