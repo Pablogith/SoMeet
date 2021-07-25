@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-interface ILabelInput {
+export interface LabelInput {
   title: string;
   name: string;
   type: string;
@@ -14,6 +14,6 @@ interface ILabelInput {
 })
 export class LabelInputComponent {
 
-  @Input() inputData!: ILabelInput;
+  @Input() inputData!: LabelInput;
 
 }

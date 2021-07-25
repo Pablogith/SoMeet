@@ -514,7 +514,7 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, Input, OnInit} from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, OnInit} from &#x27;@angular/core&#x27;;
 import {Title} from &quot;@angular/platform-browser&quot;;
 import {filter, map} from &quot;rxjs/operators&quot;;
 import {ActivatedRoute, NavigationEnd, Router} from &quot;@angular/router&quot;;
@@ -569,139 +569,24 @@ export class LayoutStructureComponent implements OnInit {
   &lt;nav class&#x3D;&quot;bg-gray-100&quot;&gt;
     &lt;div class&#x3D;&quot;max-w-7xl mx-auto px-4 sm:px-6 lg:px-8&quot;&gt;
       &lt;div class&#x3D;&quot;flex items-center justify-between h-16&quot;&gt;
-        &lt;div class&#x3D;&quot;flex items-center&quot;&gt;
-          &lt;div class&#x3D;&quot;flex-shrink-0&quot;&gt;
-            &lt;img class&#x3D;&quot;h-8 w-8&quot; src&#x3D;&quot;https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg&quot; alt&#x3D;&quot;Workflow&quot;&gt;
-          &lt;/div&gt;
-          &lt;div class&#x3D;&quot;hidden md:block&quot;&gt;
-            &lt;div class&#x3D;&quot;ml-10 flex items-baseline space-x-4&quot;&gt;
-              &lt;a routerLink&#x3D;&quot;/home&quot; routerLinkActive&#x3D;&quot;bg-gray-700 text-white&quot;
-                 class&#x3D;&quot;text-gray-500 px-3 py-2 rounded-md text-sm font-medium&quot;&gt;Home&lt;/a&gt;
-
-              &lt;a routerLink&#x3D;&quot;/messages&quot; routerLinkActive&#x3D;&quot;bg-gray-700 text-white&quot;
-                 class&#x3D;&quot;text-gray-500 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium&quot;&gt;Messages&lt;/a&gt;
-
-              &lt;a routerLink&#x3D;&quot;/saved-posts&quot; routerLinkActive&#x3D;&quot;bg-gray-700 text-white&quot;
-                 class&#x3D;&quot;text-gray-500 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium&quot;&gt;Saved
-                posts&lt;/a&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
+        &lt;layout-desktop-menu&gt;&lt;/layout-desktop-menu&gt;
         &lt;div class&#x3D;&quot;hidden md:block&quot;&gt;
           &lt;div class&#x3D;&quot;ml-4 flex items-center md:ml-6&quot;&gt;
-            &lt;button
-              class&#x3D;&quot;p-1 rounded-full text-gray-400 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white&quot;&gt;
-              &lt;span class&#x3D;&quot;sr-only&quot;&gt;View notifications&lt;/span&gt;
-              &lt;svg class&#x3D;&quot;h-6 w-6&quot; xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot; fill&#x3D;&quot;none&quot; viewBox&#x3D;&quot;0 0 24 24&quot;
-                   stroke&#x3D;&quot;currentColor&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                &lt;path stroke-linecap&#x3D;&quot;round&quot; stroke-linejoin&#x3D;&quot;round&quot; stroke-width&#x3D;&quot;2&quot;
-                      d&#x3D;&quot;M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9&quot;/&gt;
-              &lt;/svg&gt;
-            &lt;/button&gt;
-
+            &lt;layout-notifications-button&gt;&lt;/layout-notifications-button&gt;
             &lt;div class&#x3D;&quot;ml-3 relative&quot; (click)&#x3D;&quot;toggleProfileDropdownMenu()&quot;&gt;
-              &lt;div&gt;
-                &lt;button type&#x3D;&quot;button&quot;
-                        class&#x3D;&quot;max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white&quot;
-                        id&#x3D;&quot;user-menu-button&quot; aria-expanded&#x3D;&quot;false&quot; aria-haspopup&#x3D;&quot;true&quot;&gt;
-                  &lt;span class&#x3D;&quot;sr-only&quot;&gt;Open user menu&lt;/span&gt;
-                  &lt;img class&#x3D;&quot;h-8 w-8 rounded-full&quot;
-                       src&#x3D;&quot;https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib&#x3D;rb-1.2.1&amp;ixid&#x3D;eyJhcHBfaWQiOjEyMDd9&amp;auto&#x3D;format&amp;fit&#x3D;facearea&amp;facepad&#x3D;2&amp;w&#x3D;256&amp;h&#x3D;256&amp;q&#x3D;80&quot;
-                       alt&#x3D;&quot;&quot;&gt;
-                &lt;/button&gt;
-              &lt;/div&gt;
-
-              &lt;div
-                class&#x3D;&quot;origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none&quot;
-                role&#x3D;&quot;menu&quot; aria-orientation&#x3D;&quot;vertical&quot; aria-labelledby&#x3D;&quot;user-menu-button&quot; tabindex&#x3D;&quot;-1&quot;
-                *ngIf&#x3D;&quot;profileDropdownIsOpen&quot;&gt;
-                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;block px-4 py-2 text-sm text-gray-700&quot; role&#x3D;&quot;menuitem&quot; tabindex&#x3D;&quot;-1&quot;
-                   id&#x3D;&quot;user-menu-item-0&quot;&gt;Your Profile&lt;/a&gt;
-
-                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;block px-4 py-2 text-sm text-gray-700&quot; role&#x3D;&quot;menuitem&quot; tabindex&#x3D;&quot;-1&quot;
-                   id&#x3D;&quot;user-menu-item-1&quot;&gt;Settings&lt;/a&gt;
-
-                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;block px-4 py-2 text-sm text-gray-700&quot; role&#x3D;&quot;menuitem&quot; tabindex&#x3D;&quot;-1&quot;
-                   id&#x3D;&quot;user-menu-item-2&quot;&gt;Sign out&lt;/a&gt;
-              &lt;/div&gt;
+              &lt;layout-user-menu-button&gt;&lt;/layout-user-menu-button&gt;
+              &lt;layout-profile-dropdown *ngIf&#x3D;&quot;profileDropdownIsOpen&quot;&gt;&lt;/layout-profile-dropdown&gt;
             &lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
         &lt;div class&#x3D;&quot;-mr-2 flex md:hidden&quot;&gt;
-          &lt;button type&#x3D;&quot;button&quot;
-                  class&#x3D;&quot;inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white&quot;
-                  aria-controls&#x3D;&quot;mobile-menu&quot; aria-expanded&#x3D;&quot;false&quot; (click)&#x3D;&quot;toggleMobileMenu()&quot;&gt;
-            &lt;span class&#x3D;&quot;sr-only&quot;&gt;Open main menu&lt;/span&gt;
-            &lt;svg class&#x3D;&quot;block h-6 w-6&quot; xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot; fill&#x3D;&quot;none&quot; viewBox&#x3D;&quot;0 0 24 24&quot;
-                 stroke&#x3D;&quot;currentColor&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-              &lt;path stroke-linecap&#x3D;&quot;round&quot; stroke-linejoin&#x3D;&quot;round&quot; stroke-width&#x3D;&quot;2&quot; d&#x3D;&quot;M4 6h16M4 12h16M4 18h16&quot;/&gt;
-            &lt;/svg&gt;
-
-            &lt;svg class&#x3D;&quot;hidden h-6 w-6&quot; xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot; fill&#x3D;&quot;none&quot; viewBox&#x3D;&quot;0 0 24 24&quot;
-                 stroke&#x3D;&quot;currentColor&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-              &lt;path stroke-linecap&#x3D;&quot;round&quot; stroke-linejoin&#x3D;&quot;round&quot; stroke-width&#x3D;&quot;2&quot; d&#x3D;&quot;M6 18L18 6M6 6l12 12&quot;/&gt;
-            &lt;/svg&gt;
-          &lt;/button&gt;
+          &lt;layout-hamburger-menu-button (click)&#x3D;&quot;toggleMobileMenu()&quot;&gt;&lt;/layout-hamburger-menu-button&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-
-    &lt;div class&#x3D;&quot;md:hidden&quot; id&#x3D;&quot;mobile-menu&quot; *ngIf&#x3D;&quot;mobileMenuIsOpen&quot;&gt;
-      &lt;div class&#x3D;&quot;px-2 pt-2 pb-3 space-y-1 sm:px-3&quot;&gt;
-        &lt;a routerLink&#x3D;&quot;/home&quot; routerLinkActive&#x3D;&quot;bg-gray-700 text-white&quot;
-           class&#x3D;&quot;text-gray-500 block px-3 py-2 rounded-md text-base font-medium&quot;&gt;Home&lt;/a&gt;
-
-        &lt;a routerLink&#x3D;&quot;/messages&quot; routerLinkActive&#x3D;&quot;bg-gray-700 text-white&quot;
-           class&#x3D;&quot;text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium&quot;&gt;Messages&lt;/a&gt;
-
-        &lt;a routerLink&#x3D;&quot;/saved-posts&quot; routerLinkActive&#x3D;&quot;bg-gray-700 text-white&quot;
-           class&#x3D;&quot;text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium&quot;&gt;Saved
-          posts&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div class&#x3D;&quot;pt-4 pb-3 border-t border-gray-500&quot;&gt;
-        &lt;div class&#x3D;&quot;flex items-center px-5&quot;&gt;
-          &lt;div class&#x3D;&quot;flex-shrink-0&quot;&gt;
-            &lt;img class&#x3D;&quot;h-10 w-10 rounded-full&quot;
-                 src&#x3D;&quot;https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib&#x3D;rb-1.2.1&amp;ixid&#x3D;eyJhcHBfaWQiOjEyMDd9&amp;auto&#x3D;format&amp;fit&#x3D;facearea&amp;facepad&#x3D;2&amp;w&#x3D;256&amp;h&#x3D;256&amp;q&#x3D;80&quot;
-                 alt&#x3D;&quot;&quot;&gt;
-          &lt;/div&gt;
-          &lt;div class&#x3D;&quot;ml-3&quot;&gt;
-            &lt;div class&#x3D;&quot;text-base font-medium leading-none text-gray-600&quot;&gt;Tom Cook&lt;/div&gt;
-            &lt;div class&#x3D;&quot;text-sm font-medium leading-none text-gray-400&quot;&gt;tom@example.com&lt;/div&gt;
-          &lt;/div&gt;
-          &lt;button
-            class&#x3D;&quot;ml-auto flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white&quot;&gt;
-            &lt;span class&#x3D;&quot;sr-only&quot;&gt;View notifications&lt;/span&gt;
-            &lt;svg class&#x3D;&quot;h-6 w-6&quot; xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot; fill&#x3D;&quot;none&quot; viewBox&#x3D;&quot;0 0 24 24&quot;
-                 stroke&#x3D;&quot;currentColor&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-              &lt;path stroke-linecap&#x3D;&quot;round&quot; stroke-linejoin&#x3D;&quot;round&quot; stroke-width&#x3D;&quot;2&quot;
-                    d&#x3D;&quot;M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9&quot;/&gt;
-            &lt;/svg&gt;
-          &lt;/button&gt;
-        &lt;/div&gt;
-        &lt;div class&#x3D;&quot;mt-3 px-2 space-y-1&quot;&gt;
-          &lt;a href&#x3D;&quot;#&quot;
-             class&#x3D;&quot;block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-white hover:bg-gray-700&quot;&gt;Your
-            Profile&lt;/a&gt;
-
-          &lt;a href&#x3D;&quot;#&quot;
-             class&#x3D;&quot;block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-white hover:bg-gray-700&quot;&gt;Settings&lt;/a&gt;
-
-          &lt;a href&#x3D;&quot;#&quot;
-             class&#x3D;&quot;block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-white hover:bg-gray-700&quot;&gt;Sign
-            out&lt;/a&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
+    &lt;layout-mobile-menu *ngIf&#x3D;&quot;mobileMenuIsOpen&quot;&gt;&lt;/layout-mobile-menu&gt;
   &lt;/nav&gt;
-
-  &lt;header class&#x3D;&quot;bg-white shadow&quot;&gt;
-    &lt;div class&#x3D;&quot;max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8&quot;&gt;
-      &lt;h1 class&#x3D;&quot;text-3xl font-bold text-gray-900&quot;&gt;
-        {{ pageTitle }}
-      &lt;/h1&gt;
-    &lt;/div&gt;
-  &lt;/header&gt;
+  &lt;layout-header [pageTitle]&#x3D;&quot;pageTitle&quot;&gt;&lt;/layout-header&gt;
   &lt;main&gt;
     &lt;div class&#x3D;&quot;max-w-7xl mx-auto py-6 sm:px-6 lg:px-8&quot;&gt;
       &lt;ng-content&gt;&lt;/ng-content&gt;
@@ -746,8 +631,8 @@ export class LayoutStructureComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div>  <nav class="bg-gray-100">    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">      <div class="flex items-center justify-between h-16">        <div class="flex items-center">          <div class="flex-shrink-0">            <img class="h-8 w-8" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">          </div>          <div class="hidden md:block">            <div class="ml-10 flex items-baseline space-x-4">              <a routerLink="/home" routerLinkActive="bg-gray-700 text-white"                 class="text-gray-500 px-3 py-2 rounded-md text-sm font-medium">Home</a>              <a routerLink="/messages" routerLinkActive="bg-gray-700 text-white"                 class="text-gray-500 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Messages</a>              <a routerLink="/saved-posts" routerLinkActive="bg-gray-700 text-white"                 class="text-gray-500 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Saved                posts</a>            </div>          </div>        </div>        <div class="hidden md:block">          <div class="ml-4 flex items-center md:ml-6">            <button              class="p-1 rounded-full text-gray-400 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">              <span class="sr-only">View notifications</span>              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"                   stroke="currentColor" aria-hidden="true">                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"                      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>              </svg>            </button>            <div class="ml-3 relative" (click)="toggleProfileDropdownMenu()">              <div>                <button type="button"                        class="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"                        id="user-menu-button" aria-expanded="false" aria-haspopup="true">                  <span class="sr-only">Open user menu</span>                  <img class="h-8 w-8 rounded-full"                       src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"                       alt="">                </button>              </div>              <div                class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"                role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1"                *ngIf="profileDropdownIsOpen">                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"                   id="user-menu-item-0">Your Profile</a>                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"                   id="user-menu-item-1">Settings</a>                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"                   id="user-menu-item-2">Sign out</a>              </div>            </div>          </div>        </div>        <div class="-mr-2 flex md:hidden">          <button type="button"                  class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"                  aria-controls="mobile-menu" aria-expanded="false" (click)="toggleMobileMenu()">            <span class="sr-only">Open main menu</span>            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"                 stroke="currentColor" aria-hidden="true">              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>            </svg>            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"                 stroke="currentColor" aria-hidden="true">              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>            </svg>          </button>        </div>      </div>    </div>    <div class="md:hidden" id="mobile-menu" *ngIf="mobileMenuIsOpen">      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">        <a routerLink="/home" routerLinkActive="bg-gray-700 text-white"           class="text-gray-500 block px-3 py-2 rounded-md text-base font-medium">Home</a>        <a routerLink="/messages" routerLinkActive="bg-gray-700 text-white"           class="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Messages</a>        <a routerLink="/saved-posts" routerLinkActive="bg-gray-700 text-white"           class="text-gray-500 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Saved          posts</a>      </div>      <div class="pt-4 pb-3 border-t border-gray-500">        <div class="flex items-center px-5">          <div class="flex-shrink-0">            <img class="h-10 w-10 rounded-full"                 src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"                 alt="">          </div>          <div class="ml-3">            <div class="text-base font-medium leading-none text-gray-600">Tom Cook</div>            <div class="text-sm font-medium leading-none text-gray-400">tom@example.com</div>          </div>          <button            class="ml-auto flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">            <span class="sr-only">View notifications</span>            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"                 stroke="currentColor" aria-hidden="true">              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>            </svg>          </button>        </div>        <div class="mt-3 px-2 space-y-1">          <a href="#"             class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-white hover:bg-gray-700">Your            Profile</a>          <a href="#"             class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-white hover:bg-gray-700">Settings</a>          <a href="#"             class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-white hover:bg-gray-700">Sign            out</a>        </div>      </div>    </div>  </nav>  <header class="bg-white shadow">    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">      <h1 class="text-3xl font-bold text-gray-900">        {{ pageTitle }}      </h1>    </div>  </header>  <main>    <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">      <ng-content></ng-content>    </div>  </main></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'LabelInputComponent', 'selector': 'app-label-input'},{'name': 'LayoutStructureComponent', 'selector': 'layout-structure'},{'name': 'LoginPageComponent', 'selector': 'app-login-page'},{'name': 'MessagesPageComponent', 'selector': 'app-messages-page'},{'name': 'NotFoundPageComponent', 'selector': 'app-not-found-page'},{'name': 'ProfilePageComponent', 'selector': 'app-profile-page'},{'name': 'RegisterPageComponent', 'selector': 'app-register-page'},{'name': 'SavedPostPageComponent', 'selector': 'app-saved-post-page'},{'name': 'SettingsPageComponent', 'selector': 'app-settings-page'}];
+        var COMPONENT_TEMPLATE = '<div><div>  <nav class="bg-gray-100">    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">      <div class="flex items-center justify-between h-16">        <layout-desktop-menu></layout-desktop-menu>        <div class="hidden md:block">          <div class="ml-4 flex items-center md:ml-6">            <layout-notifications-button></layout-notifications-button>            <div class="ml-3 relative" (click)="toggleProfileDropdownMenu()">              <layout-user-menu-button></layout-user-menu-button>              <layout-profile-dropdown *ngIf="profileDropdownIsOpen"></layout-profile-dropdown>            </div>          </div>        </div>        <div class="-mr-2 flex md:hidden">          <layout-hamburger-menu-button (click)="toggleMobileMenu()"></layout-hamburger-menu-button>        </div>      </div>    </div>    <layout-mobile-menu *ngIf="mobileMenuIsOpen"></layout-mobile-menu>  </nav>  <layout-header [pageTitle]="pageTitle"></layout-header>  <main>    <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">      <ng-content></ng-content>    </div>  </main></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DesktopMenuComponent', 'selector': 'layout-desktop-menu'},{'name': 'HamburgerMenuButtonComponent', 'selector': 'layout-hamburger-menu-button'},{'name': 'HeaderComponent', 'selector': 'layout-header'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'LabelInputComponent', 'selector': 'app-label-input'},{'name': 'LayoutStructureComponent', 'selector': 'layout-structure'},{'name': 'LoginPageComponent', 'selector': 'app-login-page'},{'name': 'MessagesPageComponent', 'selector': 'app-messages-page'},{'name': 'MobileMenuComponent', 'selector': 'layout-mobile-menu'},{'name': 'NotFoundPageComponent', 'selector': 'app-not-found-page'},{'name': 'NotificationsButtonComponent', 'selector': 'layout-notifications-button'},{'name': 'ProfileDropdownComponent', 'selector': 'layout-profile-dropdown'},{'name': 'ProfilePageComponent', 'selector': 'app-profile-page'},{'name': 'RegisterPageComponent', 'selector': 'app-register-page'},{'name': 'SavedPostPageComponent', 'selector': 'app-saved-post-page'},{'name': 'SettingsPageComponent', 'selector': 'app-settings-page'},{'name': 'UserMenuButtonComponent', 'selector': 'layout-user-menu-button'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'LayoutStructureComponent'};
 </script>

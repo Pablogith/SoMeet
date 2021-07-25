@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {Title} from "@angular/platform-browser";
+import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-not-found-page',
@@ -13,7 +13,6 @@ import {Title} from "@angular/platform-browser";
 })
 export class NotFoundPageComponent {
 
-  constructor() {
-  }
+  constructor() {}
 
 }

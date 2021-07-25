@@ -1,7 +1,7 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {Title} from "@angular/platform-browser";
-import {filter, map} from "rxjs/operators";
-import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
+import { Component, OnInit } from '@angular/core';
+import { Title } from "@angular/platform-browser";
+import { filter, map } from "rxjs/operators";
+import { ActivatedRoute, NavigationEnd, Router } from "@angular/router";
 
 @Component({
   selector: 'layout-structure',

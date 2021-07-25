@@ -1,7 +1,7 @@
-import {Injectable} from '@angular/core';
-import {Title} from "@angular/platform-browser";
-import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
-import {filter, map} from "rxjs/operators";
+import { Injectable } from '@angular/core';
+import { Title } from "@angular/platform-browser";
+import { ActivatedRoute, NavigationEnd, Router } from "@angular/router";
+import { filter, map } from "rxjs/operators";
 
 @Injectable({
   providedIn: 'root'

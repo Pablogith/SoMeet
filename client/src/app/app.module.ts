@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from "@core/core.module";
 import { LayoutModule } from "@features/layout/layout.module";
+import { AuthorizationModule } from "@authorization/authorization.module";
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { LayoutModule } from "@features/layout/layout.module";
     BrowserModule,
     AppRoutingModule,
     CoreModule,
+    AuthorizationModule,
     LayoutModule
   ],
   providers: [],
