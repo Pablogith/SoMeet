@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { LoginPageRoutingModule } from './login-page-routing.module';
-import { LoginPageComponent } from './login-page.component';
-import { AppInputsModule } from "@shared/app-inputs/app-inputs.module";
+import {LoginPageRoutingModule} from './login-page-routing.module';
+import {LoginPageComponent} from './login-page.component';
+import {AppInputsModule} from '@shared/app-inputs/app-inputs.module';
 
 
 @NgModule({
@@ -16,4 +16,5 @@ import { AppInputsModule } from "@shared/app-inputs/app-inputs.module";
     AppInputsModule
   ]
 })
-export class LoginPageModule { }
+export class LoginPageModule {
+}

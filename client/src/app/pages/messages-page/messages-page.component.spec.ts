@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { MessagesPageComponent } from './messages-page.component';
+import {MessagesPageComponent} from './messages-page.component';
 
 describe('MessagesPageComponent', () => {
   let component: MessagesPageComponent;
@@ -8,9 +8,9 @@ describe('MessagesPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MessagesPageComponent ]
+      declarations: [MessagesPageComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

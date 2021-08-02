@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'layout-hamburger-menu-button',
@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./hamburger-menu-button.component.scss']
 })
 export class HamburgerMenuButtonComponent {
-
-  constructor() { }
-
+  constructor() {
+  }
 }

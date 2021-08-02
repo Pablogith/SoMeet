@@ -1,12 +1,15 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { CheckIsAuthPathService } from './check-is-auth-path.service';
+import {CheckIsAuthPathService} from './check-is-auth-path.service';
+import {RouterTestingModule} from "@angular/router/testing";
 
 describe('CheckIsAuthPathService', () => {
   let service: CheckIsAuthPathService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      imports: [RouterTestingModule]
+    });
     service = TestBed.inject(CheckIsAuthPathService);
   });
 

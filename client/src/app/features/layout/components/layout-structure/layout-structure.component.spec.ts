@@ -1,6 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {RouterTestingModule} from '@angular/router/testing';
 
-import { LayoutStructureComponent } from './layout-structure.component';
+import {LayoutStructureComponent} from './layout-structure.component';
 
 describe('LayoutStructureComponent', () => {
   let component: LayoutStructureComponent;
@@ -8,9 +9,10 @@ describe('LayoutStructureComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LayoutStructureComponent ]
+      imports: [RouterTestingModule],
+      declarations: [LayoutStructureComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

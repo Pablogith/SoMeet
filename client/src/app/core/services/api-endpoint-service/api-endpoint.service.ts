@@ -1,13 +1,12 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
-import {  Constants } from '@config/constants';
+import {Constants} from '@config/constants';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiEndpointService {
-
   private constants!: Constants;
 
   constructor() {
@@ -17,5 +16,4 @@ export class ApiEndpointService {
   public getDefaultApiEndpoint(): string {
     return this.constants.API_ENDPOINT;
   }
-
 }

@@ -1,13 +1,12 @@
-import { Injectable } from '@angular/core';
-import { Title } from "@angular/platform-browser";
-import { ActivatedRoute, NavigationEnd, Router } from "@angular/router";
-import { filter, map } from "rxjs/operators";
+import {Injectable} from '@angular/core';
+import {Title} from '@angular/platform-browser';
+import {ActivatedRoute, NavigationEnd, Router} from '@angular/router';
+import {filter, map} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PageTitleService {
-
   constructor(private titleService: Title,
               private router: Router,
               private activatedRoute: ActivatedRoute) {
@@ -26,5 +25,4 @@ export class PageTitleService {
       this.titleService.setTitle(ttl);
     });
   }
-
 }

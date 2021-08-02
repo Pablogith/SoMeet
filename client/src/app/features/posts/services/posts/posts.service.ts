@@ -1,18 +1,17 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
 
-import { PostsService as IPostsService } from '@features/posts/interfaces/posts-service';
-import { Post } from '@features/posts/interfaces/post';
-import { UrlBuilder } from '@core/utils/url-builder/url-builder';
-import { SegmentsUrl } from '@core/utils/segments-url/segments-url';
+import {PostsService as IPostsService} from '@features/posts/interfaces/posts-service';
+import {Post} from '@features/posts/interfaces/post';
+import {UrlBuilder} from '@core/utils/url-builder/url-builder';
+import {SegmentsUrl} from '@core/utils/segments-url/segments-url';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class PostsService implements IPostsService {
-
   private urlBuilder: UrlBuilder;
 
   constructor(private http: HttpClient) {
@@ -31,9 +30,9 @@ export class PostsService implements IPostsService {
     return this.http.put<Post>(this.urlBuilder.getUrl(segmentsOfUrl), data);
   }
 
-  public getAll(): Observable<Array<Post>> | Observable<Post> | Observable<ArrayBuffer> | null {
+  public getAll(): Observable<ReadonlyArray<Post>> | Observable<Post> | Observable<ArrayBuffer> | null {
     const segmentsOfUrl: SegmentsUrl = new SegmentsUrl();
-    return this.http.get<Array<Post>>(this.urlBuilder.getUrl(segmentsOfUrl));
+    return this.http.get<ReadonlyArray<Post>>(this.urlBuilder.getUrl(segmentsOfUrl));
   }
 
   public getById(id: number): Observable<Post> | null {
@@ -41,5 +40,4 @@ export class PostsService implements IPostsService {
     segmentsOfUrl.push(id.toString());
     return this.http.get<Post>(this.urlBuilder.getUrl(segmentsOfUrl));
   }
-
 }

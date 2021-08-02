@@ -1,8 +1,8 @@
 export class SegmentsUrl {
-
   private segments: Array<string> = [];
 
-  constructor() { }
+  constructor() {
+  }
 
   public push(segment: string): void {
     this.segments.push(segment);
@@ -11,5 +11,4 @@ export class SegmentsUrl {
   public toString(): string {
     return this.segments.join('/');
   }
-
 }

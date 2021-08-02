@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { MessagesPageRoutingModule } from './messages-page-routing.module';
-import { MessagesPageComponent } from './messages-page.component';
+import {MessagesPageRoutingModule} from './messages-page-routing.module';
+import {MessagesPageComponent} from './messages-page.component';
 
 
 @NgModule({
@@ -14,4 +14,5 @@ import { MessagesPageComponent } from './messages-page.component';
     MessagesPageRoutingModule
   ]
 })
-export class MessagesPageModule { }
+export class MessagesPageModule {
+}

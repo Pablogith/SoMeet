@@ -1,7 +1,5 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from "@angular/common/http";
-
-import { User } from "@features/users/interfaces/user";
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 
 @Injectable({
@@ -9,10 +7,9 @@ import { User } from "@features/users/interfaces/user";
 })
 export class HttpUsersService {
 
-  private URL = 'http://localhost:8080/api/users' as const;
+  private readonly URL = 'http://localhost:8080/api/users';
 
-  constructor(private http: HttpClient) { }
-
-  // public getById(): User {}
+  constructor(private http: HttpClient) {
+  }
 
 }

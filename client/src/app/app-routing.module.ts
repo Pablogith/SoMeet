@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+
 
 const routes: Routes = [
   {
@@ -10,37 +11,37 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./pages/home-page/home-page.module').then(m => m.HomePageModule),
-    data: { title: 'Home' }
+    data: {title: 'Home'}
   },
   {
     path: 'messages',
     loadChildren: () => import('./pages/messages-page/messages-page.module').then(m => m.MessagesPageModule),
-    data: { title: 'Messages' }
+    data: {title: 'Messages'}
   },
   {
     path: 'saved-posts',
     loadChildren: () => import('./pages/saved-posts-page/saved-posts-page.module').then(m => m.SavedPostsPageModule),
-    data: { title: 'Saved posts' }
+    data: {title: 'Saved posts'}
   },
   {
     path: 'profile',
     loadChildren: () => import('./pages/profile-page/profile-page.module').then(m => m.ProfilePageModule),
-    data: { title: 'Profile' }
+    data: {title: 'Profile'}
   },
   {
     path: 'settings',
     loadChildren: () => import('./pages/settings-page/settings-page.module').then(m => m.SettingsPageModule),
-    data: { title: 'Settings' }
+    data: {title: 'Settings'}
   },
   {
     path: 'login',
     loadChildren: () => import('./pages/login-page/login-page.module').then(m => m.LoginPageModule),
-    data: { title: 'Login' }
+    data: {title: 'Login'}
   },
   {
     path: 'register',
     loadChildren: () => import('./pages/register-page/register-page.module').then(m => m.RegisterPageModule),
-    data: { title: 'Register' }
+    data: {title: 'Register'}
   },
   {
     path: '**',
@@ -52,4 +53,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

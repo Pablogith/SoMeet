@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { DesktopMenuComponent } from './desktop-menu.component';
+import {DesktopMenuComponent} from './desktop-menu.component';
 
 describe('DesktopMenuComponent', () => {
   let component: DesktopMenuComponent;
@@ -8,9 +8,9 @@ describe('DesktopMenuComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DesktopMenuComponent ]
+      declarations: [DesktopMenuComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

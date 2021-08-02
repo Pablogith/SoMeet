@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { SavedPostsPageRoutingModule } from './saved-posts-page-routing.module';
-import { SavedPostPageComponent } from './saved-post-page.component';
+import {SavedPostsPageRoutingModule} from './saved-posts-page-routing.module';
+import {SavedPostPageComponent} from './saved-post-page.component';
 
 
 @NgModule({
@@ -14,4 +14,5 @@ import { SavedPostPageComponent } from './saved-post-page.component';
     SavedPostsPageRoutingModule
   ]
 })
-export class SavedPostsPageModule { }
+export class SavedPostsPageModule {
+}

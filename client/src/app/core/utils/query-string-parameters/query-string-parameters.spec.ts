@@ -1,7 +1,6 @@
-import { QueryStringParameters } from './query-string-parameters';
+import {QueryStringParameters} from './query-string-parameters';
 
 describe('QueryStringParameters', () => {
-
   it('should create an instance', () => {
     expect(new QueryStringParameters()).toBeTruthy();
   });
@@ -19,5 +18,4 @@ describe('QueryStringParameters', () => {
     queryStringParameters.push('user', '123');
     expect(queryStringParameters.toString()).toBe('mode=dev&data=true&user=123');
   });
-
 });

@@ -1,7 +1,6 @@
-import { SegmentsUrl } from './segments-url';
+import {SegmentsUrl} from './segments-url';
 
 describe('SegmentsUrl', () => {
-
   it('should create an instance', () => {
     expect(new SegmentsUrl()).toBeTruthy();
   });
@@ -19,5 +18,4 @@ describe('SegmentsUrl', () => {
     segmentsUrl.push('add');
     expect(segmentsUrl.toString()).toBe('user/12/add');
   });
-
 });

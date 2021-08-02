@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 
 @Component({
@@ -7,7 +7,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./saved-post-page.component.scss']
 })
 export class SavedPostPageComponent {
-
-  constructor() { }
-
 }

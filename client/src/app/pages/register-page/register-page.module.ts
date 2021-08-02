@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { RegisterPageRoutingModule } from './register-page-routing.module';
-import { RegisterPageComponent } from './register-page.component';
-import { AppInputsModule } from "@shared/app-inputs/app-inputs.module";
+import {RegisterPageRoutingModule} from './register-page-routing.module';
+import {RegisterPageComponent} from './register-page.component';
+import {AppInputsModule} from '@shared/app-inputs/app-inputs.module';
 
 
 @NgModule({
@@ -16,4 +16,5 @@ import { AppInputsModule } from "@shared/app-inputs/app-inputs.module";
     AppInputsModule
   ]
 })
-export class RegisterPageModule { }
+export class RegisterPageModule {
+}

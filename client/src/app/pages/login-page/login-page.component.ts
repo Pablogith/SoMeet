@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 
 @Component({
@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./login-page.component.scss']
 })
 export class LoginPageComponent {
-
   public emailInputData = {
     title: 'Email',
     name: 'email',
@@ -21,7 +20,4 @@ export class LoginPageComponent {
     type: 'password',
     placeholder: '********'
   };
-
-  constructor() { }
-
 }

@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { SavedPostPageComponent } from './saved-post-page.component';
+import {SavedPostPageComponent} from './saved-post-page.component';
 
 describe('SavedPostPageComponent', () => {
   let component: SavedPostPageComponent;
@@ -8,9 +8,9 @@ describe('SavedPostPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SavedPostPageComponent ]
+      declarations: [SavedPostPageComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

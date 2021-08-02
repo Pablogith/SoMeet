@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { Post } from "@features/posts/interfaces/post";
+import {Component, Input} from '@angular/core';
+import {Post} from '@features/posts/interfaces/post';
 
 @Component({
   selector: 'posts-post-list',
@@ -7,22 +7,22 @@ import { Post } from "@features/posts/interfaces/post";
   styleUrls: ['./post-list.component.scss']
 })
 export class PostListComponent {
-
   @Input()
-  get posts(): Array<Post> { return this._posts; }
-  set posts(posts: Array<Post>) {
+  get posts(): ReadonlyArray<Post> {
+    return this._posts;
+  }
+
+  set posts(posts: ReadonlyArray<Post>) {
     this._posts = posts || false;
   }
 
-  private _posts!: Array<Post>;
-
-  constructor() { }
+  private _posts!: ReadonlyArray<Post>;
 
   public trackByPostId(index: number, post: Post): Post['id'] {
     return post.id;
   }
 
-  public typeofIsObject(posts: Array<Post>): boolean {
-    return (typeof (posts).toString() === 'object');
+  public typeofIsObject(posts: ReadonlyArray<Post>): boolean {
+    return (typeof posts === 'object');
   }
 }

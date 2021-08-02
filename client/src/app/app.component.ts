@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
-import { CheckIsAuthPathService } from "@authorization/services/check-is-auth-path/check-is-auth-path.service";
-import { PageTitleService } from "@core/services/page-title-service/page-title.service";
+import {CheckIsAuthPathService} from '@authorization/services/check-is-auth-path/check-is-auth-path.service';
+import {PageTitleService} from '@core/services/page-title-service/page-title.service';
 
 
 @Component({
@@ -10,7 +10,6 @@ import { PageTitleService } from "@core/services/page-title-service/page-title.s
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-
   public isAuthPath!: boolean;
 
   constructor(private checkIsAuthPathService: CheckIsAuthPathService,
@@ -27,5 +26,4 @@ export class AppComponent implements OnInit {
       this.isAuthPath = isAuth;
     });
   }
-
 }

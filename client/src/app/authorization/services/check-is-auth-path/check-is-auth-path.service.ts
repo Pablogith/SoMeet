@@ -1,15 +1,14 @@
-import { Injectable } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
-import { Observable, Subject } from 'rxjs';
-import { filter } from 'rxjs/operators';
+import {Injectable} from '@angular/core';
+import {NavigationEnd, Router} from '@angular/router';
+import {Observable, Subject} from 'rxjs';
+import {filter} from 'rxjs/operators';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class CheckIsAuthPathService {
-
-  private authPaths: Array<string> = [
+  private authPaths: ReadonlyArray<string> = [
     '/login',
     '/register'
   ];
@@ -31,5 +30,4 @@ export class CheckIsAuthPathService {
   public isAuthPath(): Observable<boolean> {
     return this._isAuthPath.asObservable();
   }
-
 }

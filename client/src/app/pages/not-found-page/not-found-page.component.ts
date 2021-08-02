@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 
 @Component({
@@ -9,10 +9,11 @@ import { Component } from '@angular/core';
       width: 100vw;
       height: 100vh;
     }
-`]
+  `]
 })
 export class NotFoundPageComponent {
 
-  constructor() {}
+  constructor() {
+  }
 
 }

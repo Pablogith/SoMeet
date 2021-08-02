@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 export interface LabelInput {
   title: string;
@@ -13,7 +13,5 @@ export interface LabelInput {
   styleUrls: ['./label-input.component.scss']
 })
 export class LabelInputComponent {
-
   @Input() inputData!: LabelInput;
-
 }

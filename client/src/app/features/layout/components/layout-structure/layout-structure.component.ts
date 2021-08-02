@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { Title } from "@angular/platform-browser";
-import { filter, map } from "rxjs/operators";
-import { ActivatedRoute, NavigationEnd, Router } from "@angular/router";
+import {Component, OnInit} from '@angular/core';
+import {Title} from "@angular/platform-browser";
+import {filter, map} from "rxjs/operators";
+import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
 
 @Component({
   selector: 'layout-structure',
@@ -9,14 +9,14 @@ import { ActivatedRoute, NavigationEnd, Router } from "@angular/router";
   styleUrls: ['./layout-structure.component.scss']
 })
 export class LayoutStructureComponent implements OnInit {
-
   public pageTitle!: string;
   public profileDropdownIsOpen = false;
   public mobileMenuIsOpen = false;
 
   constructor(private titleService: Title,
               private router: Router,
-              private activatedRoute: ActivatedRoute) { }
+              private activatedRoute: ActivatedRoute) {
+  }
 
   public ngOnInit(): void {
     this.setSectionTitle();
@@ -43,5 +43,4 @@ export class LayoutStructureComponent implements OnInit {
       this.pageTitle = ttl;
     });
   }
-
 }

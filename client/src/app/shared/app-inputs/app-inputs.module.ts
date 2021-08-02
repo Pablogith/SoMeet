@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { LabelInputComponent } from './components/label-input/label-input.component';
+import {LabelInputComponent} from './components/label-input/label-input.component';
 
 
 @NgModule({
@@ -15,4 +15,5 @@ import { LabelInputComponent } from './components/label-input/label-input.compon
     LabelInputComponent
   ]
 })
-export class AppInputsModule { }
+export class AppInputsModule {
+}

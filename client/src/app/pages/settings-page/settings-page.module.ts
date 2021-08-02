@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { SettingsPageRoutingModule } from './settings-page-routing.module';
-import { SettingsPageComponent } from './settings-page.component';
+import {SettingsPageRoutingModule} from './settings-page-routing.module';
+import {SettingsPageComponent} from './settings-page.component';
 
 
 @NgModule({
@@ -14,4 +14,5 @@ import { SettingsPageComponent } from './settings-page.component';
     SettingsPageRoutingModule
   ]
 })
-export class SettingsPageModule { }
+export class SettingsPageModule {
+}

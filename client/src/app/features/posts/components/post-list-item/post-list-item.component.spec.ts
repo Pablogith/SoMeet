@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { PostListItemComponent } from './post-list-item.component';
+import {PostListItemComponent} from './post-list-item.component';
 
 describe('PostListItemComponent', () => {
   let component: PostListItemComponent;
@@ -8,9 +8,9 @@ describe('PostListItemComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PostListItemComponent ]
+      declarations: [PostListItemComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

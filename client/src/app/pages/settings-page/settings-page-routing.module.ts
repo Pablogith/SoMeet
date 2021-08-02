@@ -1,6 +1,7 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { SettingsPageComponent } from "./settings-page.component";
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {SettingsPageComponent} from './settings-page.component';
+
 
 const routes: Routes = [
   {
@@ -13,4 +14,5 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class SettingsPageRoutingModule { }
+export class SettingsPageRoutingModule {
+}
