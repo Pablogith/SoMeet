@@ -1,8 +1,13 @@
-<div *ngIf="!typeofIsObject(posts); else lackOfPostsTemplateMsg">
+<div *ngIf="posts; else lackOfPostsTemplateMsg">
   <ul>
-    <posts-post-list-item *ngFor="let post of posts; trackBy:trackByPostId"></posts-post-list-item>
+    <posts-post-list-item *ngFor="let post of posts; trackBy:trackByPostId"
+                          [postData]="post">
+    </posts-post-list-item>
   </ul>
 </div>
 <ng-template #lackOfPostsTemplateMsg>
-  Not found a posts
+  <div class="w-full mt-8 text-center text-gray-700">
+    Not found any posts...
+  </div>
+  <hr>
 </ng-template>

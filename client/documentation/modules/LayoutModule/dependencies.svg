@@ -14,13 +14,13 @@
 <title>cluster_LayoutModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-32.8 8,-230.8 1540,-230.8 1540,-32.8 8,-32.8"/>
 </g>
-<g id="clust2" class="cluster">
-<title>cluster_LayoutModule_declarations</title>
-<polygon fill="none" stroke="black" points="16,-40.8 16,-92.8 1532,-92.8 1532,-40.8 16,-40.8"/>
-</g>
 <g id="clust12" class="cluster">
 <title>cluster_LayoutModule_exports</title>
 <polygon fill="none" stroke="black" points="699,-170.8 699,-222.8 891,-222.8 891,-170.8 699,-170.8"/>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_LayoutModule_declarations</title>
+<polygon fill="none" stroke="black" points="16,-40.8 16,-92.8 1532,-92.8 1532,-40.8 16,-40.8"/>
 </g>
 <!-- DesktopMenuComponent -->
 <g id="node1" class="node">

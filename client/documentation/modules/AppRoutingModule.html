@@ -72,8 +72,9 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
-import { RouterModule, Routes } from &#x27;@angular/router&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {NgModule} from &#x27;@angular/core&#x27;;
+import {RouterModule, Routes} from &#x27;@angular/router&#x27;;
+
 
 const routes: Routes &#x3D; [
   {
@@ -84,37 +85,37 @@ const routes: Routes &#x3D; [
   {
     path: &#x27;home&#x27;,
     loadChildren: () &#x3D;&gt; &quot;import(&#x27;./pages/home-page/home-page.module&#x27;).then(m &#x3D;&gt; m.HomePageModule)&quot;,
-    data: { title: &#x27;Home&#x27; }
+    data: {title: &#x27;Home&#x27;}
   },
   {
     path: &#x27;messages&#x27;,
     loadChildren: () &#x3D;&gt; &quot;import(&#x27;./pages/messages-page/messages-page.module&#x27;).then(m &#x3D;&gt; m.MessagesPageModule)&quot;,
-    data: { title: &#x27;Messages&#x27; }
+    data: {title: &#x27;Messages&#x27;}
   },
   {
     path: &#x27;saved-posts&#x27;,
     loadChildren: () &#x3D;&gt; &quot;import(&#x27;./pages/saved-posts-page/saved-posts-page.module&#x27;).then(m &#x3D;&gt; m.SavedPostsPageModule)&quot;,
-    data: { title: &#x27;Saved posts&#x27; }
+    data: {title: &#x27;Saved posts&#x27;}
   },
   {
     path: &#x27;profile&#x27;,
     loadChildren: () &#x3D;&gt; &quot;import(&#x27;./pages/profile-page/profile-page.module&#x27;).then(m &#x3D;&gt; m.ProfilePageModule)&quot;,
-    data: { title: &#x27;Profile&#x27; }
+    data: {title: &#x27;Profile&#x27;}
   },
   {
     path: &#x27;settings&#x27;,
     loadChildren: () &#x3D;&gt; &quot;import(&#x27;./pages/settings-page/settings-page.module&#x27;).then(m &#x3D;&gt; m.SettingsPageModule)&quot;,
-    data: { title: &#x27;Settings&#x27; }
+    data: {title: &#x27;Settings&#x27;}
   },
   {
     path: &#x27;login&#x27;,
     loadChildren: () &#x3D;&gt; &quot;import(&#x27;./pages/login-page/login-page.module&#x27;).then(m &#x3D;&gt; m.LoginPageModule)&quot;,
-    data: { title: &#x27;Login&#x27; }
+    data: {title: &#x27;Login&#x27;}
   },
   {
     path: &#x27;register&#x27;,
     loadChildren: () &#x3D;&gt; &quot;import(&#x27;./pages/register-page/register-page.module&#x27;).then(m &#x3D;&gt; m.RegisterPageModule)&quot;,
-    data: { title: &#x27;Register&#x27; }
+    data: {title: &#x27;Register&#x27;}
   },
   {
     path: &#x27;**&#x27;,
@@ -126,7 +127,8 @@ const routes: Routes &#x3D; [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
 </code></pre>
     </div>
 </div>

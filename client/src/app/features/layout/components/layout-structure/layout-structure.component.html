@@ -8,7 +8,9 @@
             <layout-notifications-button></layout-notifications-button>
             <div class="ml-3 relative" (click)="toggleProfileDropdownMenu()">
               <layout-user-menu-button></layout-user-menu-button>
-              <layout-profile-dropdown *ngIf="profileDropdownIsOpen"></layout-profile-dropdown>
+              <layout-profile-dropdown *ngIf="profileDropdownIsOpen"
+                                       (mouseleave)="profileDropdownIsOpen = false">
+              </layout-profile-dropdown>
             </div>
           </div>
         </div>

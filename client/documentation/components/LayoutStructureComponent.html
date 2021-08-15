@@ -196,7 +196,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/features/layout/components/layout-structure/layout-structure.component.ts:15</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/features/layout/components/layout-structure/layout-structure.component.ts:14</a></div>
                             </td>
                         </tr>
 
@@ -448,7 +448,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/features/layout/components/layout-structure/layout-structure.component.ts:15</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/features/layout/components/layout-structure/layout-structure.component.ts:14</a></div>
                         </td>
                     </tr>
 
@@ -475,7 +475,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/features/layout/components/layout-structure/layout-structure.component.ts:13</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/features/layout/components/layout-structure/layout-structure.component.ts:12</a></div>
                         </td>
                     </tr>
 
@@ -501,7 +501,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/features/layout/components/layout-structure/layout-structure.component.ts:14</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/features/layout/components/layout-structure/layout-structure.component.ts:13</a></div>
                         </td>
                     </tr>
 
@@ -525,14 +525,14 @@ import {ActivatedRoute, NavigationEnd, Router} from &quot;@angular/router&quot;;
   styleUrls: [&#x27;./layout-structure.component.scss&#x27;]
 })
 export class LayoutStructureComponent implements OnInit {
-
   public pageTitle!: string;
   public profileDropdownIsOpen &#x3D; false;
   public mobileMenuIsOpen &#x3D; false;
 
   constructor(private titleService: Title,
               private router: Router,
-              private activatedRoute: ActivatedRoute) { }
+              private activatedRoute: ActivatedRoute) {
+  }
 
   public ngOnInit(): void {
     this.setSectionTitle();
@@ -559,7 +559,6 @@ export class LayoutStructureComponent implements OnInit {
       this.pageTitle &#x3D; ttl;
     });
   }
-
 }
 </code></pre>
     </div>
@@ -575,7 +574,9 @@ export class LayoutStructureComponent implements OnInit {
             &lt;layout-notifications-button&gt;&lt;/layout-notifications-button&gt;
             &lt;div class&#x3D;&quot;ml-3 relative&quot; (click)&#x3D;&quot;toggleProfileDropdownMenu()&quot;&gt;
               &lt;layout-user-menu-button&gt;&lt;/layout-user-menu-button&gt;
-              &lt;layout-profile-dropdown *ngIf&#x3D;&quot;profileDropdownIsOpen&quot;&gt;&lt;/layout-profile-dropdown&gt;
+              &lt;layout-profile-dropdown *ngIf&#x3D;&quot;profileDropdownIsOpen&quot;
+                                       (mouseleave)&#x3D;&quot;profileDropdownIsOpen &#x3D; false&quot;&gt;
+              &lt;/layout-profile-dropdown&gt;
             &lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -631,8 +632,8 @@ export class LayoutStructureComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div>  <nav class="bg-gray-100">    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">      <div class="flex items-center justify-between h-16">        <layout-desktop-menu></layout-desktop-menu>        <div class="hidden md:block">          <div class="ml-4 flex items-center md:ml-6">            <layout-notifications-button></layout-notifications-button>            <div class="ml-3 relative" (click)="toggleProfileDropdownMenu()">              <layout-user-menu-button></layout-user-menu-button>              <layout-profile-dropdown *ngIf="profileDropdownIsOpen"></layout-profile-dropdown>            </div>          </div>        </div>        <div class="-mr-2 flex md:hidden">          <layout-hamburger-menu-button (click)="toggleMobileMenu()"></layout-hamburger-menu-button>        </div>      </div>    </div>    <layout-mobile-menu *ngIf="mobileMenuIsOpen"></layout-mobile-menu>  </nav>  <layout-header [pageTitle]="pageTitle"></layout-header>  <main>    <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">      <ng-content></ng-content>    </div>  </main></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DesktopMenuComponent', 'selector': 'layout-desktop-menu'},{'name': 'HamburgerMenuButtonComponent', 'selector': 'layout-hamburger-menu-button'},{'name': 'HeaderComponent', 'selector': 'layout-header'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'LabelInputComponent', 'selector': 'app-label-input'},{'name': 'LayoutStructureComponent', 'selector': 'layout-structure'},{'name': 'LoginPageComponent', 'selector': 'app-login-page'},{'name': 'MessagesPageComponent', 'selector': 'app-messages-page'},{'name': 'MobileMenuComponent', 'selector': 'layout-mobile-menu'},{'name': 'NotFoundPageComponent', 'selector': 'app-not-found-page'},{'name': 'NotificationsButtonComponent', 'selector': 'layout-notifications-button'},{'name': 'ProfileDropdownComponent', 'selector': 'layout-profile-dropdown'},{'name': 'ProfilePageComponent', 'selector': 'app-profile-page'},{'name': 'RegisterPageComponent', 'selector': 'app-register-page'},{'name': 'SavedPostPageComponent', 'selector': 'app-saved-post-page'},{'name': 'SettingsPageComponent', 'selector': 'app-settings-page'},{'name': 'UserMenuButtonComponent', 'selector': 'layout-user-menu-button'}];
+        var COMPONENT_TEMPLATE = '<div><div>  <nav class="bg-gray-100">    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">      <div class="flex items-center justify-between h-16">        <layout-desktop-menu></layout-desktop-menu>        <div class="hidden md:block">          <div class="ml-4 flex items-center md:ml-6">            <layout-notifications-button></layout-notifications-button>            <div class="ml-3 relative" (click)="toggleProfileDropdownMenu()">              <layout-user-menu-button></layout-user-menu-button>              <layout-profile-dropdown *ngIf="profileDropdownIsOpen"                                       (mouseleave)="profileDropdownIsOpen = false">              </layout-profile-dropdown>            </div>          </div>        </div>        <div class="-mr-2 flex md:hidden">          <layout-hamburger-menu-button (click)="toggleMobileMenu()"></layout-hamburger-menu-button>        </div>      </div>    </div>    <layout-mobile-menu *ngIf="mobileMenuIsOpen"></layout-mobile-menu>  </nav>  <layout-header [pageTitle]="pageTitle"></layout-header>  <main>    <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">      <ng-content></ng-content>    </div>  </main></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DesktopMenuComponent', 'selector': 'layout-desktop-menu'},{'name': 'HamburgerMenuButtonComponent', 'selector': 'layout-hamburger-menu-button'},{'name': 'HeaderComponent', 'selector': 'layout-header'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'LabelInputComponent', 'selector': 'app-label-input'},{'name': 'LayoutStructureComponent', 'selector': 'layout-structure'},{'name': 'LoginPageComponent', 'selector': 'app-login-page'},{'name': 'MessagesPageComponent', 'selector': 'app-messages-page'},{'name': 'MobileMenuComponent', 'selector': 'layout-mobile-menu'},{'name': 'NotFoundPageComponent', 'selector': 'app-not-found-page'},{'name': 'NotificationsButtonComponent', 'selector': 'layout-notifications-button'},{'name': 'PostCreateComponent', 'selector': 'posts-post-create'},{'name': 'PostListComponent', 'selector': 'posts-post-list'},{'name': 'PostListItemComponent', 'selector': 'posts-post-list-item'},{'name': 'ProfileDropdownComponent', 'selector': 'layout-profile-dropdown'},{'name': 'ProfilePageComponent', 'selector': 'app-profile-page'},{'name': 'RegisterPageComponent', 'selector': 'app-register-page'},{'name': 'SavedPostPageComponent', 'selector': 'app-saved-post-page'},{'name': 'SettingsPageComponent', 'selector': 'app-settings-page'},{'name': 'UserMenuButtonComponent', 'selector': 'layout-user-menu-button'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'LayoutStructureComponent'};
 </script>

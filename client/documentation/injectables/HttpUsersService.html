@@ -78,6 +78,7 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
                                 <a href="#URL" >URL</a>
                             </li>
                         </ul>
@@ -155,6 +156,7 @@
                     <a name="URL"></a>
                     <span class="name">
                             <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
                         <span ><b>URL</b></span>
                         <a href="#URL"><span class="icon ion-ios-link"></span></a>
                     </span>
@@ -162,7 +164,13 @@
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Default value : </i><code>&#x27;http://localhost:8080/api/users&#x27; as const</code>
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;http://localhost:8080/api/users&#x27;</code>
                     </td>
                 </tr>
                     <tr>
@@ -180,20 +188,19 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
-import {HttpClient} from &quot;@angular/common/http&quot;;
-import {User} from &quot;@features/users/interfaces/user&quot;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Injectable} from &#x27;@angular/core&#x27;;
+import {HttpClient} from &#x27;@angular/common/http&#x27;;
+
 
 @Injectable({
   providedIn: &#x27;root&#x27;
 })
 export class HttpUsersService {
 
-  private URL &#x3D; &#x27;http://localhost:8080/api/users&#x27; as const;
+  private readonly URL &#x3D; &#x27;http://localhost:8080/api/users&#x27;;
 
-  constructor(private http: HttpClient) { }
-
-  // public getById(): User {}
+  constructor(private http: HttpClient) {
+  }
 
 }
 </code></pre>

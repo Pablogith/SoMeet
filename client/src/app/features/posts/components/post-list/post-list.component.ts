@@ -1,28 +1,29 @@
-import {Component, Input} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Post} from '@features/posts/interfaces/post';
+import {PostsMockService} from '@features/posts/services/posts-mock/posts-mock.service';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'posts-post-list',
   templateUrl: './post-list.component.html',
   styleUrls: ['./post-list.component.scss']
 })
-export class PostListComponent {
-  @Input()
-  get posts(): ReadonlyArray<Post> {
-    return this._posts;
+export class PostListComponent implements OnInit {
+  public posts!: ReadonlyArray<Post>;
+
+  private posts$!: Observable<ReadonlyArray<Post>>;
+
+  constructor(private postsMockService: PostsMockService) {
   }
 
-  set posts(posts: ReadonlyArray<Post>) {
-    this._posts = posts || false;
+  public ngOnInit(): void {
+    this.posts$ = this.postsMockService.getAll();
+    this.posts$.subscribe(posts => {
+      this.posts = posts;
+    });
   }
-
-  private _posts!: ReadonlyArray<Post>;
 
   public trackByPostId(index: number, post: Post): Post['id'] {
     return post.id;
-  }
-
-  public typeofIsObject(posts: ReadonlyArray<Post>): boolean {
-    return (typeof posts === 'object');
   }
 }

@@ -58,7 +58,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/authorization/intercdptors/auth.interceptor.ts</code>
+            <code>src/app/authorization/interceptors/auth.interceptor.ts</code>
         </p>
 
 
@@ -118,8 +118,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="13"
-                            class="link-to-prism">src/app/authorization/intercdptors/auth.interceptor.ts:13</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="7"
+                            class="link-to-prism">src/app/authorization/interceptors/auth.interceptor.ts:7</a></div>
                 </td>
             </tr>
 
@@ -184,18 +184,12 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
-import {
-  HttpRequest,
-  HttpHandler,
-  HttpEvent,
-  HttpInterceptor
-} from &#x27;@angular/common/http&#x27;;
-import { Observable } from &#x27;rxjs&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Injectable} from &#x27;@angular/core&#x27;;
+import {HttpEvent, HttpHandler, HttpInterceptor, HttpRequest} from &#x27;@angular/common/http&#x27;;
+import {Observable} from &#x27;rxjs&#x27;;
 
 @Injectable()
 export class AuthInterceptor implements HttpInterceptor {
-
   intercept(request: HttpRequest&lt;unknown&gt;, next: HttpHandler): Observable&lt;HttpEvent&lt;unknown&gt;&gt; {
     const idToken &#x3D; localStorage.getItem(&#x27;id_token&#x27;);
 

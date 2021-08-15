@@ -2,11 +2,11 @@ import {Post} from '@features/posts/interfaces/post';
 import {Observable} from 'rxjs';
 
 export interface PostsService {
-  getById(id: number): Observable<Post> | null;
+  getById(id: number): Observable<Post>;
 
-  getAll(): Observable<ReadonlyArray<Post>> | Observable<Post> | Observable<ArrayBuffer> | null;
+  getAll(): Observable<ReadonlyArray<Post>>;
 
-  editById(id: number, data: any): Observable<Post> | Observable<object>;
+  editById(id: number, data: Post): Observable<Post>;
 
   deleteById(id: number): Observable<Object>;
 }

@@ -193,8 +193,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="16"
-                            class="link-to-prism">src/app/core/services/page-title-service/page-title.service.ts:16</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="15"
+                            class="link-to-prism">src/app/core/services/page-title-service/page-title.service.ts:15</a></div>
                 </td>
             </tr>
 
@@ -217,15 +217,14 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Injectable} from &#x27;@angular/core&#x27;;
-import {Title} from &quot;@angular/platform-browser&quot;;
-import {ActivatedRoute, NavigationEnd, Router} from &quot;@angular/router&quot;;
-import {filter, map} from &quot;rxjs/operators&quot;;
+import {Title} from &#x27;@angular/platform-browser&#x27;;
+import {ActivatedRoute, NavigationEnd, Router} from &#x27;@angular/router&#x27;;
+import {filter, map} from &#x27;rxjs/operators&#x27;;
 
 @Injectable({
   providedIn: &#x27;root&#x27;
 })
 export class PageTitleService {
-
   constructor(private titleService: Title,
               private router: Router,
               private activatedRoute: ActivatedRoute) {
@@ -244,7 +243,6 @@ export class PageTitleService {
       this.titleService.setTitle(ttl);
     });
   }
-
 }
 </code></pre>
     </div>

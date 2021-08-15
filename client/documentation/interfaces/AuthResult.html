@@ -176,30 +176,29 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
-import { HttpClient } from &quot;@angular/common/http&quot;;
-import * as moment from &quot;moment&quot;;
-import {shareReplay, tap} from &quot;rxjs/operators&quot;;
-import {Observable} from &quot;rxjs&quot;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Injectable} from &#x27;@angular/core&#x27;;
+import {HttpClient} from &#x27;@angular/common/http&#x27;;
+import * as moment from &#x27;moment&#x27;;
+import {shareReplay, tap} from &#x27;rxjs/operators&#x27;;
+import {Observable} from &#x27;rxjs&#x27;;
 
 interface AuthResult {
   expiresIn: number;
   idToken: string
 }
 
-
 @Injectable({
   providedIn: &#x27;root&#x27;
 })
 export class AuthService {
+  private readonly ID_TOKEN_KEY_NAME &#x3D; &#x27;id_token&#x27;;
+  private readonly EXPIRES_AT_KEY_NAME &#x3D; &#x27;expires_at&#x27;;
 
-  private ID_TOKEN_KEY_NAME &#x3D; &#x27;id_token&#x27; as const;
-  private EXPIRES_AT_KEY_NAME &#x3D; &#x27;expires_at&#x27; as const;
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+  }
 
   public login(email: string, password: string): Observable&lt;Object&gt; {
-    return this.http.post&lt;AuthResult&gt;(&#x27;api/login&#x27;, { email, password })
+    return this.http.post&lt;AuthResult&gt;(&#x27;api/login&#x27;, {email, password})
       .pipe(
         tap((res: AuthResult) &#x3D;&gt; this.setSession(res)),
         shareReplay()
@@ -220,18 +219,17 @@ export class AuthService {
   }
 
   private setSession(authResult: AuthResult): void {
-    const expiresAt &#x3D; moment().add(authResult.expiresIn,&#x27;second&#x27;);
+    const expiresAt &#x3D; moment().add(authResult.expiresIn, &#x27;second&#x27;);
 
     localStorage.setItem(this.ID_TOKEN_KEY_NAME, authResult.idToken);
-    localStorage.setItem(this.EXPIRES_AT_KEY_NAME, JSON.stringify(expiresAt.valueOf()) );
+    localStorage.setItem(this.EXPIRES_AT_KEY_NAME, JSON.stringify(expiresAt.valueOf()));
   }
 
   private getExpiration(): moment.Moment {
     const expiration &#x3D; localStorage.getItem(this.EXPIRES_AT_KEY_NAME);
     const expiresAt &#x3D; expiration ? JSON.parse(expiration) : null;
-    return moment(expiresAt)
+    return moment(expiresAt);
   }
-
 }
 </code></pre>
     </div>

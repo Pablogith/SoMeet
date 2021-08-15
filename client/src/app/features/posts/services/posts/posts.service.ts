@@ -24,18 +24,18 @@ export class PostsService implements IPostsService {
     return this.http.delete<Post>(this.urlBuilder.getUrl(segmentsOfUrl));
   }
 
-  public editById(id: number, data: any): Observable<Post> | Observable<object> {
+  public editById(id: number, data: any): Observable<Post> {
     const segmentsOfUrl: SegmentsUrl = new SegmentsUrl();
     segmentsOfUrl.push(id.toString());
     return this.http.put<Post>(this.urlBuilder.getUrl(segmentsOfUrl), data);
   }
 
-  public getAll(): Observable<ReadonlyArray<Post>> | Observable<Post> | Observable<ArrayBuffer> | null {
+  public getAll(): Observable<ReadonlyArray<Post>> {
     const segmentsOfUrl: SegmentsUrl = new SegmentsUrl();
     return this.http.get<ReadonlyArray<Post>>(this.urlBuilder.getUrl(segmentsOfUrl));
   }
 
-  public getById(id: number): Observable<Post> | null {
+  public getById(id: number): Observable<Post> {
     const segmentsOfUrl: SegmentsUrl = new SegmentsUrl();
     segmentsOfUrl.push(id.toString());
     return this.http.get<Post>(this.urlBuilder.getUrl(segmentsOfUrl));

@@ -180,7 +180,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/app.component.ts:12</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/app.component.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -261,8 +261,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="23"
-                            class="link-to-prism">src/app/app.component.ts:23</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/app/app.component.ts:24</a></div>
                 </td>
             </tr>
 
@@ -300,8 +300,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="18"
-                            class="link-to-prism">src/app/app.component.ts:18</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/app/app.component.ts:19</a></div>
                 </td>
             </tr>
 
@@ -343,7 +343,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/app.component.ts:12</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/app.component.ts:13</a></div>
                         </td>
                     </tr>
 
@@ -357,8 +357,10 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, OnInit} from &#x27;@angular/core&#x27;;
-import {CheckIsAuthPathService} from &quot;@authorization/services/check-is-auth-path/check-is-auth-path.service&quot;;
-import {PageTitleService} from &quot;@core/services/page-title-service/page-title.service&quot;;
+
+import {CheckIsAuthPathService} from &#x27;@authorization/services/check-is-auth-path/check-is-auth-path.service&#x27;;
+import {PageTitleService} from &#x27;@core/services/page-title-service/page-title.service&#x27;;
+
 
 @Component({
   selector: &#x27;app-root&#x27;,
@@ -366,7 +368,6 @@ import {PageTitleService} from &quot;@core/services/page-title-service/page-titl
   styleUrls: [&#x27;./app.component.scss&#x27;]
 })
 export class AppComponent implements OnInit {
-
   public isAuthPath!: boolean;
 
   constructor(private checkIsAuthPathService: CheckIsAuthPathService,
@@ -383,7 +384,6 @@ export class AppComponent implements OnInit {
       this.isAuthPath &#x3D; isAuth;
     });
   }
-
 }
 </code></pre>
     </div>
@@ -431,7 +431,7 @@ export class AppComponent implements OnInit {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><layout-structure *ngIf="!isAuthPath; else authPages">  <router-outlet></router-outlet></layout-structure><ng-template #authPages>  <router-outlet></router-outlet></ng-template></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DesktopMenuComponent', 'selector': 'layout-desktop-menu'},{'name': 'HamburgerMenuButtonComponent', 'selector': 'layout-hamburger-menu-button'},{'name': 'HeaderComponent', 'selector': 'layout-header'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'LabelInputComponent', 'selector': 'app-label-input'},{'name': 'LayoutStructureComponent', 'selector': 'layout-structure'},{'name': 'LoginPageComponent', 'selector': 'app-login-page'},{'name': 'MessagesPageComponent', 'selector': 'app-messages-page'},{'name': 'MobileMenuComponent', 'selector': 'layout-mobile-menu'},{'name': 'NotFoundPageComponent', 'selector': 'app-not-found-page'},{'name': 'NotificationsButtonComponent', 'selector': 'layout-notifications-button'},{'name': 'ProfileDropdownComponent', 'selector': 'layout-profile-dropdown'},{'name': 'ProfilePageComponent', 'selector': 'app-profile-page'},{'name': 'RegisterPageComponent', 'selector': 'app-register-page'},{'name': 'SavedPostPageComponent', 'selector': 'app-saved-post-page'},{'name': 'SettingsPageComponent', 'selector': 'app-settings-page'},{'name': 'UserMenuButtonComponent', 'selector': 'layout-user-menu-button'}];
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DesktopMenuComponent', 'selector': 'layout-desktop-menu'},{'name': 'HamburgerMenuButtonComponent', 'selector': 'layout-hamburger-menu-button'},{'name': 'HeaderComponent', 'selector': 'layout-header'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'LabelInputComponent', 'selector': 'app-label-input'},{'name': 'LayoutStructureComponent', 'selector': 'layout-structure'},{'name': 'LoginPageComponent', 'selector': 'app-login-page'},{'name': 'MessagesPageComponent', 'selector': 'app-messages-page'},{'name': 'MobileMenuComponent', 'selector': 'layout-mobile-menu'},{'name': 'NotFoundPageComponent', 'selector': 'app-not-found-page'},{'name': 'NotificationsButtonComponent', 'selector': 'layout-notifications-button'},{'name': 'PostCreateComponent', 'selector': 'posts-post-create'},{'name': 'PostListComponent', 'selector': 'posts-post-list'},{'name': 'PostListItemComponent', 'selector': 'posts-post-list-item'},{'name': 'ProfileDropdownComponent', 'selector': 'layout-profile-dropdown'},{'name': 'ProfilePageComponent', 'selector': 'app-profile-page'},{'name': 'RegisterPageComponent', 'selector': 'app-register-page'},{'name': 'SavedPostPageComponent', 'selector': 'app-saved-post-page'},{'name': 'SettingsPageComponent', 'selector': 'app-settings-page'},{'name': 'UserMenuButtonComponent', 'selector': 'layout-user-menu-button'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'AppComponent'};
 </script>
