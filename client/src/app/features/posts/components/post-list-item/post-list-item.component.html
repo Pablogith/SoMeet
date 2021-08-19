@@ -1,7 +1,10 @@
 <div class="box-content container bg-gray-100 rounded-lg p-3 ml-4 mr-4 w-auto mb-2">
-  <p class="text-gray-500 text-sm">{{postData.createdAt | date:'longDate'}}</p>
+  <div>
+    <p class="text-gray-800 text-sm font-bold inline mr-2">Pablo Kany</p>
+    <p class="text-gray-500 text-sm inline">{{postData.createdAt | date:'longDate'}}</p>
+  </div>
   <p class="text-base">{{postData.content}}</p>
   <div class="w-auto mt-2">
-    <span>likes</span>
+    <span>{{postData.likes.length}} #</span>
   </div>
 </div>

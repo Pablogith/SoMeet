@@ -1,7 +1,12 @@
 import {Component, OnInit} from '@angular/core';
+import {Observable} from 'rxjs';
+
 import {Post} from '@features/posts/interfaces/post';
 import {PostsMockService} from '@features/posts/services/posts-mock/posts-mock.service';
-import {Observable} from 'rxjs';
+import {User} from '@features/users/interfaces/user';
+import {UsersMockService} from '@features/users/services/users-mock/users-mock.service';
+
+type ArrayOfPosts = Array<Post>;
 
 @Component({
   selector: 'posts-post-list',
@@ -9,15 +14,16 @@ import {Observable} from 'rxjs';
   styleUrls: ['./post-list.component.scss']
 })
 export class PostListComponent implements OnInit {
-  public posts!: ReadonlyArray<Post>;
+  public posts!: ArrayOfPosts;
 
-  private posts$!: Observable<ReadonlyArray<Post>>;
+  private posts$!: Observable<ArrayOfPosts>;
 
-  constructor(private postsMockService: PostsMockService) {
+  constructor(private postsMockService: PostsMockService,
+              private usersMockService: UsersMockService) {
   }
 
   public ngOnInit(): void {
-    this.posts$ = this.postsMockService.getAll();
+    this.posts$ = this.postsMockService.getAll() as Observable<ArrayOfPosts>;
     this.posts$.subscribe(posts => {
       this.posts = posts;
     });
@@ -25,5 +31,12 @@ export class PostListComponent implements OnInit {
 
   public trackByPostId(index: number, post: Post): Post['id'] {
     return post.id;
+  }
+
+  private getUserData(id: number): void {
+    let user!: User;
+    this.usersMockService.getUserById(id).subscribe(result => {
+      user = result;
+    });
   }
 }

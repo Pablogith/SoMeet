@@ -9,7 +9,7 @@
             <div class="ml-3 relative" (click)="toggleProfileDropdownMenu()">
               <layout-user-menu-button></layout-user-menu-button>
               <layout-profile-dropdown *ngIf="profileDropdownIsOpen"
-                                       (mouseleave)="profileDropdownIsOpen = false">
+                                       (mouseleave)="closeProfileDropdown()">
               </layout-profile-dropdown>
             </div>
           </div>

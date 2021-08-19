@@ -4,20 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e136a5b0-eb3c-471d-837c-42999ec58de8" name="Default Changelist" comment="Reformat files and add tests">
-      <change afterPath="$PROJECT_DIR$/client/src/app/features/posts/services/posts-mock/mock-posts.ts" afterDir="false" />
+    <list default="true" id="e136a5b0-eb3c-471d-837c-42999ec58de8" name="Default Changelist" comment="Update post-list.component and post-list-item.component">
+      <change afterPath="$PROJECT_DIR$/client/src/app/features/users/services/users-mock/mock-users.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/features/layout/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/features/layout/components/header/header.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/features/layout/components/layout-structure/layout-structure.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/features/layout/components/layout-structure/layout-structure.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/features/layout/components/layout-structure/layout-structure.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/features/layout/components/layout-structure/layout-structure.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/features/posts/components/post-list-item/post-list-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/features/posts/components/post-list-item/post-list-item.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/features/posts/components/post-list-item/post-list-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/features/posts/components/post-list-item/post-list-item.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/features/posts/components/post-list/post-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/features/posts/components/post-list/post-list.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/features/posts/components/post-list/post-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/features/posts/components/post-list/post-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/features/posts/interfaces/post.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/features/posts/interfaces/post.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/features/posts/interfaces/posts-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/features/posts/interfaces/posts-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/features/posts/posts.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/features/posts/posts.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/features/posts/services/posts/posts.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/features/posts/services/posts/posts.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/features/users/services/http-users/http-users.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/features/users/services/users/users.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/features/users/services/http-users/http-users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/features/users/services/users/users.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +38,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1uj31GqWPa4EiEQk6NQfo4zwqCf" />
   <component name="ProjectViewState">
@@ -86,32 +80,6 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.test">
-    <configuration name="AuthInterceptor" type="JavaScriptTestRunnerKarma" temporary="true" nameIsGenerated="true">
-      <config-file value="$PROJECT_DIR$/client/karma.conf.js" />
-      <karma-package-dir value="$PROJECT_DIR$/client/node_modules/@angular/cli" />
-      <working-directory value="$PROJECT_DIR$/client" />
-      <node-interpreter value="project" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file-path value="$PROJECT_DIR$/client/src/app/authorization/interceptors/auth.interceptor.spec.ts" />
-      <test-names>
-        <test-name value="AuthInterceptor" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="PostsMockService" type="JavaScriptTestRunnerKarma" temporary="true" nameIsGenerated="true">
-      <config-file value="$PROJECT_DIR$/client/karma.conf.js" />
-      <karma-package-dir value="$PROJECT_DIR$/client/node_modules/@angular/cli" />
-      <working-directory value="$PROJECT_DIR$/client" />
-      <node-interpreter value="project" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file-path value="$PROJECT_DIR$/client/src/app/features/posts/services/posts-mock/posts-mock.service.spec.ts" />
-      <test-names>
-        <test-name value="PostsMockService" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="PostsMockService.should find post by id" type="JavaScriptTestRunnerKarma" temporary="true" nameIsGenerated="true">
       <config-file value="$PROJECT_DIR$/client/karma.conf.js" />
       <karma-package-dir value="$PROJECT_DIR$/client/node_modules/@angular/cli" />
@@ -126,17 +94,34 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="UrlBuilder" type="JavaScriptTestRunnerKarma" temporary="true" nameIsGenerated="true">
-      <config-file value="$PROJECT_DIR$/client/karma.conf.js" />
-      <karma-package-dir value="$PROJECT_DIR$/client/node_modules/@angular/cli" />
-      <working-directory value="$PROJECT_DIR$/client" />
+    <configuration name="compodoc" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="compodoc" />
+      </scripts>
       <node-interpreter value="project" />
       <envs />
-      <scope-kind value="SUITE" />
-      <test-file-path value="$PROJECT_DIR$/client/src/app/core/utils/url-builder/url-builder.spec.ts" />
-      <test-names>
-        <test-name value="UrlBuilder" />
-      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="lint:fix" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint:fix" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -150,19 +135,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Karma.UrlBuilder" />
-      <item itemvalue="Karma.AuthInterceptor" />
-      <item itemvalue="npm.test" />
-      <item itemvalue="Karma.PostsMockService" />
       <item itemvalue="Karma.PostsMockService.should find post by id" />
+      <item itemvalue="npm.test" />
+      <item itemvalue="npm.lint:fix" />
+      <item itemvalue="npm.compodoc" />
+      <item itemvalue="npm.lint" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.test" />
+        <item itemvalue="npm.lint:fix" />
+        <item itemvalue="npm.lint" />
+        <item itemvalue="npm.compodoc" />
         <item itemvalue="Karma.PostsMockService.should find post by id" />
-        <item itemvalue="Karma.PostsMockService" />
-        <item itemvalue="Karma.AuthInterceptor" />
-        <item itemvalue="Karma.UrlBuilder" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +172,8 @@
       <workItem from="1627403273240" duration="5014000" />
       <workItem from="1627799389941" duration="5654000" />
       <workItem from="1627917055756" duration="8062000" />
-      <workItem from="1628938928707" duration="19503000" />
+      <workItem from="1628938928707" duration="19894000" />
+      <workItem from="1629402996958" duration="2370000" />
     </task>
     <task id="LOCAL-00001" summary="Add Angular as a client and nest.js as a server">
       <created>1625165276580</created>
@@ -245,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627925266854</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Update post-list.component and post-list-item.component">
+      <created>1629044174824</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1629044174825</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +265,8 @@
     <MESSAGE value="Refactor layout-structure.component&#10;&#10;Create simple post-create component" />
     <MESSAGE value="Create class for manipulate url address" />
     <MESSAGE value="Reformat files and add tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reformat files and add tests" />
+    <MESSAGE value="Update post-list.component and post-list-item.component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update post-list.component and post-list-item.component" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

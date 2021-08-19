@@ -30,6 +30,10 @@ export class LayoutStructureComponent implements OnInit {
     this.mobileMenuIsOpen = !this.mobileMenuIsOpen;
   }
 
+  public closeProfileDropdown(): void {
+    this.profileDropdownIsOpen = false;
+  }
+
   private setSectionTitle(): void {
     const appTitle = this.titleService.getTitle();
     this.router
