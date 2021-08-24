@@ -37,7 +37,7 @@ export const posts = [
     ]
   },
   {
-    id: 4,
+    id: 3,
     userId: 1,
     createdAt: new Date(2020, 5),
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris augue neque gravida in fermentum et sollicitudin ac orci.',

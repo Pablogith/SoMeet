@@ -3,6 +3,11 @@ import {TestBed} from '@angular/core/testing';
 import {PostsMockService} from './posts-mock.service';
 import {Post} from '@features/posts/interfaces/post';
 
+interface ExpectResponse extends Object {
+  msg: string;
+  errCode: number
+}
+
 describe('PostsMockService', () => {
   let service: PostsMockService;
 
@@ -16,7 +21,7 @@ describe('PostsMockService', () => {
   });
 
   it('should find post by id', () => {
-    let gotPost!: Post | { msg: string; errCode: number } extends object;
+    let gotPost!: Post | ExpectResponse;
     const post$ = service.getById(2);
     post$?.subscribe(post => {
       gotPost = post;
